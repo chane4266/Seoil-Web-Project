@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>album</title>
+	<style>
+		body{background-color:#FFF5EE;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#container { margin-top:170px; margin-bottom:50px; position:relative; width:100%; }
+		footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+		
+		/* 여기부터 container 스타일 */
+		img { width:200px; height:200px; }
+		img:hover { background-color:gray;}
+		#container { margin-left:17%; }
+		
+	</style>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"> 	
+	</script>
+	<script>
+	window.onload=function(){
+		if (localStorage.getItem(3)==1)
+			document.getElementById("favor").innerText +=" 락 ";	
+	  	if (localStorage.getItem(4)==1)
+	  		document.getElementById("favor").innerText +=" R&B ";
+	  	if (localStorage.getItem(5)==1)
+	  		document.getElementById("favor").innerText +=" 발라드 ";
+	  	if (localStorage.getItem(6)==1)
+	  		document.getElementById("favor").innerText+=" 댄스 ";
+	  	if (localStorage.getItem(7)==1)
+	  		document.getElementById("favor").innerText+=" 힙합 ";
+	  	if (localStorage.getItem(8)==1)
+	  		document.getElementById("favor").innerText+=" 소울 ";
+	  	if (localStorage.getItem(9)==1)
+	  		document.getElementById("favor").innerText +=" 인디 ";
+	  	
+
+	}
+		
+	</script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+
+	<div id=container>
+		<div id="cu_album">
+			<p><strong>추천 앨범</strong> 선호 장르: <span id="favor"></span> </p>
+			<a href="album_01.html"><img src="./img/앨범/music_01.jpg" onmouseover="this.src='./img/앨범/back_01.png'"onmouseout="this.src='./img/앨범/music_01.jpg'"></a>
+			<a href="album_02.html"><img src="./img/앨범/music_02.jpg" onmouseover="this.src='./img/앨범/back_02.png'"onmouseout="this.src='./img/앨범/music_02.jpg'"></a>
+			<a href="album_03.html"><img src="./img/앨범/music_03.jpg" onmouseover="this.src='./img/앨범/back_03.png'"onmouseout="this.src='./img/앨범/music_03.jpg'"></a>
+			<a href="album_04.html"><img src="./img/앨범/music_04.jpg" onmouseover="this.src='./img/앨범/back_04.png'"onmouseout="this.src='./img/앨범/music_04.jpg'"></a>	
+			<a href="album_05.html"><img src="./img/앨범/music_05.jpg" onmouseover="this.src='./img/앨범/back_05.png'"onmouseout="this.src='./img/앨범/music_05.jpg'"></a>
+			<br>
+		</div>
+		<div id="new_album">
+			<p><strong>최신 앨범</strong></p>
+			<a href="album_06.html"><img src="./img/앨범/music_06.jpg" onmouseover="this.src='./img/앨범/back_06.png'"onmouseout="this.src='./img/앨범/music_06.jpg'"></a>
+			<a href="album_07.html"><img src="./img/앨범/music_07.jpg" onmouseover="this.src='./img/앨범/back_07.png'"onmouseout="this.src='./img/앨범/music_07.jpg'"></a>
+			<a href="album_08.html"><img src="./img/앨범/music_08.jpg" onmouseover="this.src='./img/앨범/back_08.png'"onmouseout="this.src='./img/앨범/music_08.jpg'"></a>
+			<a href="album_09.html"><img src="./img/앨범/music_09.jpg" onmouseover="this.src='./img/앨범/back_09.png'"onmouseout="this.src='./img/앨범/music_09.jpg'"></a>	
+			<a href="album_10.html"><img src="./img/앨범/music_10.jpg" onmouseover="this.src='./img/앨범/back_10.png'"onmouseout="this.src='./img/앨범/music_10.jpg'"></a>	
+		</div>
+	</div>
+	
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

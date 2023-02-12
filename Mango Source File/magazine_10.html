@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>artist2</title>
+	<style>
+        body{background-color:#FFF5EE;}
+        .body{margin-left:200px; margin-right:200px;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		#line { border:1px solid darkgray; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header ul { padding:0; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#containt {margin-top:170px; margin-bottom:50px; position:relative; width:100%; text-align:center;}
+        footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+
+       /* 여기부터 container 스타일 */
+        #hot_img{float:left; margin: 5px 5px 10px 0px; padding:0px 5px;}
+        .artist10_main_thename {color:black; text-align:center; font-size:28px;}
+        .DRAMA_containt{color:#5F9EA0; font-size:14px; text-align:center; line-height:195%;}
+        .DRAMA_containt span{color:	#8B0000; font-weight: bold;}
+        .copy {color:#191970; font-size:14px; text-align:left;}
+        table 
+        {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            border-color:#D3D3D3;
+        }
+        th, td 
+        {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            border-color:#D3D3D3;
+            font-weight:bold;
+            color:#696969;
+        }
+        button{color:#696969; background-color:#FFF5EE;}
+	</style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        function checkAll1() {
+            if ($("#wholecontrolcheck1").is(':checked')) {
+                $("input[name=checkRow1]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow1]").prop("checked", false);
+            }
+        }
+        function checkAll2() {
+            if ($("#wholecontrolcheck2").is(':checked')) {
+                $("input[name=checkRow2]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow2]").prop("checked", false);
+            }
+        }
+        function checkAll3() {
+            if ($("#wholecontrolcheck3").is(':checked')) {
+                $("input[name=checkRow3]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow3]").prop("checked", false);
+            }
+        }
+        function checkAll4() {
+            if ($("#wholecontrolcheck4").is(':checked')) {
+                $("input[name=checkRow4]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow4]").prop("checked", false);
+            }
+        }
+        function checkAll5() {
+            if ($("#wholecontrolcheck5").is(':checked')) {
+                $("input[name=checkRow5]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow5]").prop("checked", false);
+            }
+        }
+        function checkAll6() {
+            if ($("#wholecontrolcheck6").is(':checked')) {
+                $("input[name=checkRow6]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow6]").prop("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop  style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+    <div class="body">
+        <div id=containt>
+            <p class="artist10_main_thename">망붕짤 오조오억개 생성한다는 웹드 </p><br /><br />
+            <div class="DRAMA">
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190612051754407.jpg" width=950 height=400><br /><br /><br /><br />
+                <p class="DRAMA_containt">
+                    현실반영 120%로<br /> 
+                    <span>망붕계의 떠오르는 강자 웹드라마<br /><br /><br /> 
+
+                    "나 1020인데 내 동년배들 다 웹드 좋아한다!"</span>
+                </p><br /><br /><br />==================<br /><br /><br />
+                
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190612032221824.jpg" width=800 height=1250><br /><br /><br /><br />
+                <p class="DRAMA_containt">
+                    현실반영 120%로<br />
+                        꾸준히 인기몰이하던<br />
+                        웹드의 정점을 찍게 한 장본인 <span>[에이틴]</span><br />
+                        고딩들의 이야기가 뭐 이렇게<br />
+                        설레고 슬프고 애잔한지ㅠㅠㅠㅠ<br /><br />
+
+                        신예은, 이나은, 김동희를 비롯한<br />
+                        모든 출연자가 핫스타로 떠올랐고,<br />
+                        <span>세븐틴이 부른 삽입곡 'A-TEEN'</span>은<br />
+                        웹드OST 최초로 <span>음원차트 1위</span>까지 기록!<br />
+                        ( 에이틴 모르는 사람이랑 겸상 안 함니다...)<br />
+                </p><br /><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck1" type="checkbox" onclick="checkAll1()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="1_checkbox1" type="checkbox" name="checkRow1" /></th>
+                            <th>1</th>
+                            <th>A-TEEN</th>
+                            <th>세븐틴</th>
+                            <th>A-TEEN Part 3</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=SrqLA8tRkf8')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                        <tr>
+                            <th><input id="1_checkbox2" type="checkbox" name="checkRow1" /></th>
+                            <th>2</th>
+                            <th>9-TEEN</th>
+                            <th>세븐틴</th>
+                            <th>A-TEEN2 Part 2</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=IezSWTlSNo4')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                        <tr>
+                            <th><input id="1_checkbox3" type="checkbox" name="checkRow1" /></th>
+                            <th>3</th>
+                            <th>도망가지마</th>
+                            <th>모트(Motte)</th>
+                            <th>A-TEEN Part 4</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=MoRBfn8_AH8')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                    </tbody>
+                </table><br /><br /><br />==================<br /><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190612033147898.jpg" width=800 height=1150><br /><br /><br /><br />
+                <p class="DRAMA_containt">
+                    먹방과 연애 이야기를 동시에 담은<br />
+                    솔직단짠 웹드 <span>[한입만]</span>은<br />
+                    감정이입 120% 인물관계로<br />
+                    1020세대의 큰 공감을 이끌었지ㅠㅠ<br /><br /><br />
+
+                    근데 난 무엇보다<br />
+                    저 <span>세 사람의 우정이</span> 좋았다그....<br />
+                </p><br /><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck2" type="checkbox" onclick="checkAll2()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="2_checkbox1" type="checkbox" name="checkRow2" /></th>
+                            <th>1</th>
+                            <th>짠 (ZZAN)</th>
+                            <th>여자친구(GFRIEND)</th>
+                            <th>한입만2</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=KMRLR0wwm0Y')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                        <tr>
+                            <th><input id="2_checkbox2" type="checkbox" name="checkRow2"  /></th>
+                            <th>2</th>
+                            <th>삐뚤어졌어 (2018 Ver.)</th>
+                            <th>선우정아 </th>
+                            <th>한입만 OST Part 3</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=mAHs47GAuyY')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                    </tbody>
+                </table><br /><br /><br />==================<br /><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190612034655371.jpg" width=800 height=1150><br /><br /><br /><br />
+                <p class="DRAMA_containt">
+                    제목만 보고 므흣했다면....?<br />
+                    아니아니아니아니아니아니지<br />
+                    물론 <span>19세 고딩들의 발칙한(?)</span><br />
+                    <span>청춘 로맨스</span>를 그리긴 했지만...(부끄)<br /><br />
+ 
+                    쓰니는 주인공 윤아에게<br />
+                    빙의되어 감상했다고 한다... 오늘의 tmi<br />
+                </p><br /><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck3" type="checkbox" onclick="checkAll3()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="3_checkbox1" type="checkbox"  name="checkRow3" /></th>
+                            <th>1</th>
+                            <th>Chocolate</th>
+                            <th>DAY6(데이식스)</th>
+                            <th>하지 말라면 더 하고 19 Part 1</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=zSUa0xPJ5_g')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                        <tr>
+                            <th><input id="3_checkbox2" type="checkbox" name="checkRow3" /></th>
+                            <th>2</th>
+                            <th>어떡해 (Feat. 스텔라장)</th>
+                            <th>이요한(OFA) </th>
+                            <th>하지 말라면 더 하고 19 Part 2</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=IUZopQUwww4')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                    </tbody>
+                </table><br /><br /><br />==================<br /><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190612035315800.jpg" width=800 height=600><br /><br /><br /><br />
+                <p class="DRAMA_containt">
+                    시즌 4의 첫 방을 앞두고 있는!!!<br />
+                    20대의 열렬한 지지를 받고 있는!!<br />
+                    <span>[연애플레이리스트]!!!!</span><br /><br />
+
+                    아니... 시즌4에서 커플들은<br />
+                    또 어떻게 되는 거야ㅠㅠㅠㅠ<br />
+                    22일 언제 오죠...?<br />
+                   <span>(여러분 연플리 정주행하쎄요!!)</span><br />
+                </p><br /><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck4" type="checkbox" onclick="checkAll4()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="4_checkbox1" type="checkbox" name="checkRow4" /></th>
+                            <th>1</th>
+                            <th>너에게</th>
+                            <th>김민석</th>
+                            <th>연애플레이리스트3 Part 2</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=0a-4PKYuCnY')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                        <tr>
+                            <th><input id="4_checkbox2" type="checkbox" name="checkRow4" /></th>
+                            <th>2</th>
+                            <th>있잖아</th>
+                            <th>폴킴</th>
+                            <th>연애플레이리스트2 OST Part 2</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=zGxrUFshTyI')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                        <tr>
+                            <th><input id="4_checkbox3" type="checkbox" name="checkRow4" /></th>
+                            <th>3</th>
+                            <th>Perfect</th>
+                            <th>10cm</th>
+                            <th>연애플레이리스트3 Part 1</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=ApyPa5k1jT0')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                    </tbody>
+                </table><br /><br /><br />==================<br /><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190612035551318.jpg" width=800 height=1150><br /><br /><br /><br />
+                <p class="DRAMA_containt">
+                    웹드라마로 시작해 웹무비,<br />
+                    심지어 에세이로까지 나온 일명 <span>[전짝시]</span><br />
+                    전짝시는 <span>웹드라마 최초로 1억 뷰</span>를<br />
+                    달성한 꽁냥짠내 풀풀 드라마!<br /><br />
+
+                    보다 보면 나도 모르게<br />
+                    연애력이 상승한 기분...?(은 기분일 뿐)<br />
+                </p><br /><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck5" type="checkbox" onclick="checkAll5()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="5_checkbox1" type="checkbox" name="checkRow5" /></th>
+                            <th>1</th>
+                            <th>왜안돼? (Remastered)</th>
+                            <th>DAYBREAK(데이브레이크)</th>
+                            <th>전지적 짝사랑 시점 특별판 OST</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=rokSHjP59Tg')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                        <tr>
+                            <th><input id="5_checkbox2" type="checkbox" name="checkRow5" /></th>
+                            <th>2</th>
+                            <th>김철수</th>
+                            <th>최예근밴드 </th>
+                            <th>전지적 짝사랑 시점 특별판 OST</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=9haycDf-iqc')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                        </tr>
+                    </tbody>
+                </table><br /><br /><br />==================<br /><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190612035949489.jpg" width=800 height=1100><br /><br /><br /><br />
+                <p class="DRAMA_containt">
+                    대딩과 직장인의<br />
+                    현실 연애를 그려내며<br />
+                    마지막까지 보는 이들 긴장시켰던<br />
+                    <span>[이런 꽃같은 엔딩]</span><br /><br />
+
+                    얼마 전 스핀오프 <span>[최고의 엔딩]</span>까지<br />
+                    나오면서 정주행하는 팬들 많았지~<br />
+                </p><br /><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck6" type="checkbox" onclick="checkAll6()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="6_checkbox1" type="checkbox"  name="checkRow6" /></th>
+                            <th>1</th>
+                            <th>이별 뒷면</th>
+                            <th>권진아</th>
+                            <th>이런 꽃 같은 엔딩 OST Part 2</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=BLUOsTosCsA')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                        <tr>
+                            <th><input id="6_checkbox2" type="checkbox" name="checkRow6" /></th>
+                            <th>2</th>
+                            <th>다시 쓰고 싶어</th>
+                            <th>에일리</th>
+                            <th>이런 꽃 같은 엔딩 OST Part 3</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=YbbP3aUXif0')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                    </tbody>
+                </table><br /><br /><br />==================<br /><br /><br />
+                <p class="DRAMA_containt">
+                    이외에도 재밌는 웹드가<br />
+                    얼~~~~마나 많다구!!!<br />
+                    <span>(내가 집순이인 이유)</span><br /><br />
+
+                    앞으로도 재밌는 웹드<br />
+                    많이 많이 나와주길ㅠㅠ<br />
+                </p><br /><br /><br /><br /><br />
+            </div> 
+            <p class="copy" style="font-size:12px;">출처 : 'Melon::음악이 필요한 순간 멜론' <br /><br /><br /></p>         
+         </div>
+    </div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

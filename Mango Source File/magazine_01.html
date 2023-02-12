@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>artist</title>
+	<style>
+        body{background-color:#FFF5EE;}
+        .body{margin-left:200px; margin-right:200px;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		#line { border:1px solid darkgray; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header ul { padding:0; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#containt {margin-top:170px; margin-bottom:50px; position:relative; width:100%; text-align:center;}
+        footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+
+       /* 여기부터 container 스타일 */
+        #hot_img{float:left; margin: 5px 5px 10px 0px; padding:0px 5px;}
+        .special1 {color:#FFD700; text-align:left;}
+        .hot {color:crimson; text-align:left;}
+        .special1 span, .hot span {color:black; font-size:22px;}
+        .spe1_body, .hot_body {color:#5F9EA0; font-size:14px; text-align:left; line-height:195%;}
+        .copy {color:#191970; font-size:14px; text-align:left;}
+        table 
+        {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            border-color:#D3D3D3;
+        }
+        th, td 
+        {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            border-color:#D3D3D3;
+            font-weight:bold;
+            color:#696969;
+        }
+        button{color:#696969; background-color:#FFF5EE;}
+	</style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        function checkAll() {
+            if ($("#th_checkAll").is(':checked')) {
+                $("input[name=checkRow]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow]").prop("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop  style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+    <div class="body">
+        <div id=containt>
+            <h1 class="special1">Special | <span>3년 만의 YG 보석함 탈출! 이하이 [24℃]</span></h1><br /><br /><br />
+            <img id="newspicture" src="https://cdnimg.melon.co.kr/cm/photo/images/000/800/68/346/80068346_org.jpg/melon/quality/80/optimize" width=980 height=500><br /><br /><br />
+            <p class="spe1_body">
+                정말 오랜만에 컴백한 이하이가 '누구 없소 (NO ONE) (Feat. B.I of iKON)' 로 실시간 차트 1위를 이어가며 좋은 반응을 얻고 있습니다. 다만 목요일 18시 발매였기 때문에 3일하고도 6시간 동안의 집계만이 포함된 관계로 주간 차트에서는 11위에 그쳤습니다. 아마 이변이 없는 한 차주 주간차트에서는 최상위권 순위로 상승할 것으로 보입니다.<br /><br />
+                비슷한 케이스로 지지난 주 88위, 지난주 7위를 기록했던 다비치 '너에게 못했던 내 마지막 말은' 은 또 한 번 점프해 2위를 기록하고 있네요.<br /><br />
+                임재현의 '사랑에 연습이 있었다면 (Prod. 2soo)' 은 2주 1위를 달리고 있습니다. 이 곡은 2018년 9월 발매 이후 노래방과 유튜브를 중심으로 유행했고, 올해 초부터는 음원차트에서도 역주행을 이어가고 있습니다.<br /><br />
+                지난주 10위권에는 두 곡의 팝 트랙 (Anne-Marie '2002', Billie Eilish 'bad guy') 을 볼 수 있었는데요. 모두 상승해 금주는 5위권 안에 두 곡의 팝 트랙이 자리하는 진풍경이 펼쳐졌습니다. 매주 차트 리뷰를 하고 있지만, 역대 차트에서 팝 트랙이 1위를 한 적은 있어도 동시에 5위권 안에 두 곡의 팝이 들어온 경우는 없었습니다.<br /><br />
+                역대 종합차트에서 팝 트랙이 거둔 최고 순위는 2014년 2월 멜론 주간차트에서 1위를 차지한 영화 "겨울왕국"의 OST 'Let It Go'입니다. 그다음으로는 2017년 6월 다섯째 주 주간차트에서 4위를 차지한 Ed Sheeran 'Shape Of You', 그리고 2015년 11월 주간차트에서 8위를 기록한 Adele의 'Hello'가 있었는데요. 두 곡의 Top5가 추가된 덕분에 금주부터는 이 리스트 순위도 바뀌게 되었습니다.
+            </p><br /><br />
+            <table name="musiclist">
+                <thead>
+                    <tr>
+                        <th><input name="wholechoeckbox" id="th_checkAll" type="checkbox" onclick="checkAll();"/></th>
+                        <th>no</th>
+                        <th>곡명</th>
+                        <th>아티스트</th>
+                        <th>앨범</th>
+                        <th>M/V</th>
+                        <th>Play</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><input name="checkRow" type="checkbox"/></th>
+                        <th>1</th>
+                        <th>누구 없소 (NO ONE)(Feat. B.I of iKON)</th>
+                        <th>이하이</th>
+                        <th>24℃</th>
+                        <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=GQqyCeKf8rw')">▶</button></th>
+                        <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                    </tr>
+                    <tr>
+                        <th><input name="checkRow" type="checkbox" /></th>
+                        <th>2</th>
+                        <th>NO WAY (Feat. G.Soul)</th>
+                        <th>이하이</th> 
+                        <th>24℃</th>
+                        <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                        <th><button type="button" onclick="alert('음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                    </tr>
+                    <tr>
+                        <th><input name="checkRow" type="checkbox" /></th>
+                        <th>3</th>
+                        <th>20분번(20MIN)</th>
+                        <th>이하이</th>
+                        <th>24℃</th>
+                        <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                        <th><button type="button" onclick="alert('음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                    </tr>
+                    <tr>
+                        <th><input name="checkRow" type="checkbox" /></th>
+                        <th>4</th>
+                        <th>한두 번(1,2)(Feat. CHOIHYUN SUK of TREASURE)</th>
+                        <th>이하이</th>
+                        <th>24℃</th>
+                        <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                        <th><button type="button" onclick="alert('음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                    </tr>
+                    <tr>
+                        <th><input name="checkRow" type="checkbox" /></th>
+                        <th>5</th>
+                        <th>LOVE IS OVER</th>
+                        <th>이하이</th>
+                        <th>24℃</th>
+                        <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                        <th><button type="button" onclick="alert('음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                    </tr>
+                </tbody>
+            </table><br /><br />
+            <h1 class="hot">금주의 HOT! | <span>3년 만에 앨범 발표한 이하이</span></h1><br /><br />
+            <p class="hot_body">
+                기존 이하이 음악을 즐겨 들었던 리스너 중에는 '누구 없소 (NO ONE) (Feat. B.I of iKON)'를 듣고 고개를 갸우뚱했던 분들이 꽤 있었을 것 같습니다. 아시다시피 이 노래는 후킹 한 전자음이 전면에 나서는 전형적인 YG풍의 댄스곡이며, 그간 이하이가 내세우던 주력 장르는 (이번 타이틀과 거리가 있는) 레트로 성향의 R&B이기 때문입니다.<br /><br />
+                <img id="hot_img" src="https://cdnimg.melon.co.kr/cm/album/images/102/92/330/10292330.jpg" width=200 height=250>
+                우리는 여기서 이하이가 YG의 보석함에서 무려 3년 만에 빠져나왔다는 사실에 주목할 필요가 있습니다. 공백기가 상당했던 만큼, 변치 않은 모습(R&B)은 물론 새로움(댄스)도 함께 보여주어야 한다는 고민이 많았을 겁니다. 말하자면 이번 행보는 오랜만에 컴백하는 이하이의 음악적 도전을 담고 있는 성격의 앨범이기도 한 것이죠. '누구 없소'는 바로 그런 그의 도전을 담은 트랙입니다.<br /><br />
+                급격한 선회만을 보이지 않았다는 것은 앨범이 갖는 미덕입니다. 다른 수록곡들은 레트로 필의 R&B라는 원래 이하이의 음악 색깔을 상당 부분 잇고 있는 덕분입니다. 때문에 기존 이하이의 팬들 중에는 타이틀을 듣고서 그가 YG의 규격화가 되었다는 인상을 받고, 이후 트랙들에서 마음을 푼 분들이 상당수 있지 않을까 싶습니다. 네 제 얘기에요 그러고 보면 앨범 트랙 배치도 신의 한 수인 것 같네요.<br /><br />
+                너무나 오랜만의 컴백이 미안했는지, 양현석은 올해 3월 인스타그램을 통해 직접 올해 두 번의 이하이 컴백을 약속한 바 있습니다. 약속이 잘 지켜지지 않는 것으로 유명한 (…) 그의 SNS 발언입니다만, 이번에는 꼭 지켜지기를 바라보겠습니다.
+                이번 앨범의 타이틀 곡인 "누구 없소 (NO ONE)(Feat. B.I of iKON)" 의 뮤직비디오를 보시지요!
+            </p><br /><br />
+            <p class="copy" style="font-size:12px;">출처 : 'Melon::음악이 필요한 순간 멜론' <br /><br /><br /></p>
+            <iframe width="980" height="600" src="https://www.youtube.com/embed/GQqyCeKf8rw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

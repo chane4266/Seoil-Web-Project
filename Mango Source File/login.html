@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sign up</title>
+	<style>
+		body{background-color:#FFF5EE;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#container { margin-top:170px; margin-bottom:50px; position:relative; width:100%; }
+		footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+		
+		
+		/* 여기부터 container 스타일 */  	
+		#SignUp {border-top:1px solid black;border-bottom:1px solid black; 
+		width:500px; text-align:left; margin:30px auto; padding:30px 0px 30px 20px;}
+		
+		input {border: 1px solid black;"}
+		
+		
+	</style>
+	
+	<script> //값 받기
+		function valueCheck(){
+			localStorage.setItem('1',document.getElementById("name").value);
+			localStorage.setItem('2',document.getElementById("id").value);
+	
+			if(rock.checked==true)
+				localStorage.setItem('3',1);
+			else
+				localStorage.setItem('3',0);
+			
+			if(rb.checked==true)
+				localStorage.setItem('4',1);
+			else
+				localStorage.setItem('4',0);
+					
+			if(ballade.checked==true)
+				localStorage.setItem('5',1);
+			else
+				localStorage.setItem('5',0);
+			
+			if(dance.checked==true)
+				localStorage.setItem('6',1);
+			else
+				localStorage.setItem('6',0);
+			
+			if(hiphop.checked==true)
+				localStorage.setItem('7',1);
+			else
+				localStorage.setItem('7',0);
+			
+			if(soul.checked==true)
+				localStorage.setItem('8',1);
+			else
+				localStorage.setItem('8',0);
+			
+			if(indie.checked==true)
+				localStorage.setItem('9',1);
+			else
+				localStorage.setItem('9',0);
+			
+			
+			location.href="mypage.html";
+		}
+		function repage(){
+			location.reload();
+		}
+	function pwdCheck(){
+			var pwd1 =document.getElementById("pwd1").value;
+			var pwd2 =document.getElementById("pwd2").value;
+			if(pwd1 != "" && pwd2 != ""){
+	        	if(pwd1 == pwd2){
+	            	document.getElementById("textpwd").innerHTML="비밀번호가 일치합니다.";
+	            	document.getElementById("textpwd").style.color='blue';
+	          	 }
+	        	else{
+	            	document.getElementById("textpwd").innerHTML="비밀번호가 다릅니다.";
+	            	document.getElementById("textpwd").style.color='red';
+	          	 }
+	       	}
+	    }
+
+	</script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="login.html">회원가입</a></li>
+		</ul>
+	</header>
+
+	<div id=container>
+	
+		<div id="SignUp"> 
+			<div>이름<input type='text'  id='name' name='name' size='12' > 
+			
+			</div>
+			<br>
+			<div>아이디<input type='text' id='id' name='id' size='12' >
+			<span id="textid"></span>	
+			</div>
+			<br>
+			
+			<div>비밀번호 
+			<input type='password' id='pwd1' name='pw' size='16' onchange="pwdCheck()"> </div>	
+			<br>
+			<div>비밀번호 재확인 
+			<input type='password' id='pwd2' name='pw' size='16' onchange="pwdCheck()">
+			<span id="textpwd"></span></div>
+	
+			 <br>
+			 <select> 
+						<option value='010'>010</option>
+						<option value='011'>011</option>
+						<option value='017'>017</option>
+						<option value='030'>030</option>
+					</select>	
+					&nbsp; - &nbsp;
+					 <input type='text' size='1' maxlength="4">
+					&nbsp; - &nbsp;
+					<input type='text' size='1' maxlength="4">			 			
+		
+			
+
+			<br><br><br>
+			<div style="text-align:center;">
+				<h3 >선호곡</h3> <br>
+			
+				락<input type='checkbox' id="rock"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				R&amp;B<input type='checkbox' id="rb"> &nbsp; &nbsp;
+				발라드<input type='checkbox' id="ballade"> &nbsp; &nbsp;&nbsp;&nbsp;
+				댄스<input type='checkbox' id="dance"> &nbsp; &nbsp;&nbsp;&nbsp;
+				<br>
+				<br>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+				힙합<input type='checkbox' id="hiphop"> &nbsp; &nbsp;
+				소울<input type='checkbox' id="soul"> &nbsp; &nbsp;
+				인디<input type='checkbox' id="indie"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				
+				</div>
+			<br><br>
+				
+			<div style="text-align:center;">
+				<button onclick="valueCheck()">가입</button>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+		 		<button >취소</button>
+			</div>				
+		</div>
+	</div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

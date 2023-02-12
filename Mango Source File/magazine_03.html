@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>artist2</title>
+	<style>
+        body{background-color:#FFF5EE;}
+        .body{margin-left:200px; margin-right:200px;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		#line { border:1px solid darkgray; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header ul { padding:0; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#containt {margin-top:170px; margin-bottom:50px; position:relative; width:100%; text-align:center;}
+		footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+
+       /* 여기부터 container 스타일 */
+        #hot_img{float:left; margin: 5px 5px 10px 0px; padding:0px 5px;}
+        .artist03_main_thename {color:#2F4F4F; text-align:left; font-size:26px;}
+        .classic_thename, .기생충_thename, .쇼생크탈출_thename, .밀회_thename {color:#FF00FF; text-align:left; font-size:24px;}
+        .classic_thename span, .기생충_thename span, .쇼생크탈출_thename span, .밀회_thename span {color:#708090; font-size:22px;}
+        .classic_body_containt, .기생충_containt, .쇼생크탈출_containt, .밀회_containt {color:#708090; font-size:14px; text-align:left; line-height:195%;}
+        .copy {color:#191970; font-size:14px; text-align:left;}
+             table 
+        {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            border-color:#D3D3D3;
+        }
+        th, td 
+        {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            border-color:#D3D3D3;
+            font-weight:bold;
+            color:#696969;
+        }
+        button{color:#696969; background-color:#FFF5EE;}
+	</style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        function checkAll1()
+        {
+            if ($("#wholecontrolcheck1").is(':checked'))
+            {
+                $("input[name=checkRow1]").prop("checked", true);
+            }
+            else
+            {
+                $("input[name=checkRow1]").prop("checked", false);
+            }         
+        }
+        function checkAll2() {
+            if ($("#wholecontrolcheck2").is(':checked')) {
+                $("input[name=checkRow2]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow2]").prop("checked", false);
+            }
+        }
+        function checkAll3() {
+            if ($("#wholecontrolcheck3").is(':checked')) {
+                $("input[name=checkRow3]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow3]").prop("checked", false);
+            }
+        }
+        function checkAll4() {
+            if ($("#wholecontrolcheck4").is(':checked')) {
+                $("input[name=checkRow4]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow4]").prop("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop  style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+    <div class="body">
+        <div id=containt>
+            <div class="classic">
+                <p class="artist03_main_thename">왜 악당은 클래식 음악을 좋아할까? – 영화 속 클래식 음악 </p><br /><br />
+                <img src="https://seoul-p-studio.bunjang.net/product/102684010_1_1558847902_w700.jpg" width=800 height=1000><br /><br /><br /><br />
+                <h1 class="classic_thename"> 클래식 공감 |  <span>왜 악당은 클래식 음악을 좋아할까?</span></h1><br /><br />
+                <p class="classic_body_containt">
+                    얼마 전 담당자분과 업무 관련 메일을 주고 받다가 이런 이야기를 나눴습니다.<br /><br />
+                    “왜 영화 속 악당은 클래식을 좋아하는 걸까요?”<br /><br />
+                    그러게요. 듣고 보니 확실히 그런 느낌이죠? 왜 악당은 그렇게나 자주 클래식 음악을 뒤에 깔고 뭔가를 하는 걸까요?<br /><br />
+                    그 점이 심히 궁금하니 오늘은 영화가 클래식 음악을 사용하는 방법에 대해 이야기해보려 합니다.<br /><br />
+                </p><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck1" type="checkbox" onclick="checkAll1()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="checkbox1" name="checkRow1" type="checkbox" /></th>
+                            <th>1</th>
+                            <th>Mozart:Symphony No.25 In G Minor, K. 173dB( K.183) USE KV183/y25 - Allegro Con Brio </th>
+                            <th>Wiener Philharmoniker</th>
+                            <th>Mozart: Symphonies Nos.25 & 29 / Clarinet Concerto</th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                    </tbody>
+                </table><br /><br />
+                <p class="classic_body_containt">
+                    생각해보면 작중인물이 클래식 애호가가 아닌 이상에야 영화 속 인물 대부분은 클래식 음악에 관심이 없습니다. 인물의 행위를 관장하는 연출은 대개 등장인물도 모르게 화면 뒤로 클래식 음악을 깔아버리니 말입니다.<br /><br /><br />
+
+                    이렇게 연출들이 클래식 음악을 찾아 사용하는 이유가 뭘까요? 제 생각은 이렇습니다.<br /><br /><br />
+
+                    클래식 음악은 쉽게 감정적이지 않을 뿐더러 중립도 잘 지킵니다. 클래식 음악이 이렇게 무성의 상태에 가깝기 때문에 연출자는 여러 가능성을 가지게 됩니다.<br /><br /><br />
+
+                    아래 정리한 사례를 통해 영화 속 클래식을 더 들어봅시다.
+                </p><br /><br /><br /><br />
+            </div>
+            <div class="기생충">
+                <h1 class="기생충_thename">#1  <span>왜 악당은 클래식 음악을 좋아할까?</span></h1><br /><br />
+                <img src="https://post-phinf.pstatic.net/MjAxOTA0MDhfNjgg/MDAxNTU0NzA5Njc5ODk4.cOZ0zAEDeHJgUKvEUz0qzwDZiKXzoQHqeboutcEXkC8g.hF6ekNf9qJVM2mdAZT-J3P5fHPvIvdSgcPqQqsG4KnYg.JPEG/877f3568250a9194479f6171234b25b7.jpg?type=w1200" width=900 height=1200><br /><br /><br /><br />
+                <p class="기생충_containt">
+                    클래식 음악은 작중 등장인물의 행위를 아무런 감정 없이 깔끔하게 설명하는 재주가 있습니다. 예를 들어 극중 악당이 온갖 악행을 저지르는 와중 바로크 음악이 뒤로 깔릴 때 관객은 어떤 공포도 없이 그 장면을 바라볼 수 있습니다.<br /><br /><br />
+
+                    피가 아무리 많이 터져도, 극도의 분노나 공포가 화면에 휘몰아쳐도 클래식 음악이 뒤에 깔리면 그 모든 아수라장이 음악으로 깨끗이 씻겨 나갑니다. 의외로 슬픈 장면에서 슬픈 클래식 음악이 깔리는 경우는 보기 드뭅니다.<br /><br /><br />
+
+                    감정을 이중 설명할 필요는 없지 않겠습니까?
+                </p><br /><br />
+                <img src="./img/매거진/매거진 내용/클래식/시모네 케르메스.JPG" width=900 height=1200><br /><br /><br /><br />
+                <p class="기생충_containt">
+                    생각해보면 작중인물이 클래식 애호가가 아닌 이상에야 영화 속 인물 대부분은 클래식 음악에 관심이 없습니다. 인물의 행위를 관장하는 연출은 대개 등장인물도 모르게 화면 뒤로 클래식 음악을 깔아버리니 말입니다.<br /><br /><br />
+
+                    이렇게 연출들이 클래식 음악을 찾아 사용하는 이유가 뭘까요? 제 생각은 이렇습니다.<br /><br /><br />
+
+                    클래식 음악은 쉽게 감정적이지 않을 뿐더러 중립도 잘 지킵니다. 클래식 음악이 이렇게 무성의 상태에 가깝기 때문에 연출자는 여러 가능성을 가지게 됩니다.<br /><br /><br />
+
+                    아래 정리한 사례를 통해 영화 속 클래식을 더 들어봅시다.
+                </p><br /><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck2" type="checkbox" onclick="checkAll2()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="checkbox1" name="checkRow2" type="checkbox" /></th>
+                            <th>1</th>
+                            <th>Handel : Rodelinda / Act 2 - Spietati, io vi giurai (영화 기생충 삽입곡)</th>
+                            <th>Simone Kermes,Il Complesso Barocco, Alan Curtis</th>
+                            <th>Handel : Rodelinda</th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                    </tbody>
+                </table><br /><br />
+                <img src="http://post.phinf.naver.net/MjAxOTA1MjVfMzAw/MDAxNTU4Nzg0MTcyMDAw.QxRg7mej_6Ii_MiFLiCepnxm-NTZDKuki69FhjTq1hUg.iFaT--h1ujFbcnkKAAFOqxQJRgXbj9cX_V_fDNXCox4g.JPEG/IM8Ma8k18KWXl7S2SBAEnuJ--vew.jpg" width=500 height=600><br /><br /><br /><br />
+                <p class="기생충_containt">
+                    같은 맥락에서 바로크 음악은 작중 상황을 별 일 아닌 것으로 만들어버리기도 합니다. 저번 주말에 봉준호 감독의 영화 [기생충]을 보고 왔는데요, [기생충]은 클래식 음악 사용이 두드러지는 영화는 아니지만 클래식 음악이 적절한 지점에서 적절한 역할을 수행하고 있었습니다.<br /><br /><br />
+
+                    영화가 헨델의 오페라 [로델린다]에 등장하는 아리아 [내 사랑은 오직 아들을 위한 것], [spietati, io vi guirai]을 배경음악으로 깔아 버릴 때 화면은 다양한 각도로 상황을 조망합니다.<br /><br /><br />
+
+                    범죄자들에게는 완벽범죄를 예견하고 영문도 모른 채 그 상황을 영문도 모르게 맞이하는 상대방에게는 조롱처럼 울리는 것이지요.<br />
+                </p><br /><br /><br />
+            </div>
+            <div class="쇼생크탈출">
+                <h1 class="쇼생크탈출_thename">#2  <span>작중 인물이 클래식을 좋아하면 그 사람을 의심하라 - [쇼생크 탈출]</span></h1><br /><br />
+                <img src="http://post.phinf.naver.net/MjAxNzA2MDFfMjgw/MDAxNDk2MzA1NDg3Njgx.NU_6Ckn37ffUTJaid5eaBn0eq-DICphc3oZDco_vL_cg.pP_BSqJf87m9EAT1l6_W-PxFohiSjtW5zNRM4THbse4g.PNG/I7RbUeXx7rX1boq16SamBsdIpsHc.jpg" width=500 height=550><br /><br /><br /><br />
+                <p class="쇼생크탈출_containt">
+                    클래식 음악의 순수함을 잘 써먹는 인물도 있습니다. [쇼생크 탈출]의 주인공 앤디 듀프레인은 교도소에서 느닷없이 클래식 음반을 틀어버립니다.<br /><br /><br />
+                    
+                    모차르트의 오페라 [피가로의 결혼]에 삽입된 [Che Soave Zeffiretto], 흔히 편지의 이중창이라고 하는 아리아가 교도소 전체로 흘러 퍼질 때 수감자들은 영문도 모른 채 클래식 음악에 귀를 기울입니다.
+                </p><br /><br /><br />
+                <img src="./img/매거진/매거진 내용/클래식/에디트 마티스.JPG" width=800 height=1050><br /><br /><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck3" type="checkbox" onclick="checkAll3()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="checkbox1" name="checkRow3" type="checkbox" /></th>
+                            <th>1</th>
+                            <th>Mozart : Le Nozze Di Figaro, K.492 / Act 3 - 'Che Soave Zeffiretto</th>
+                            <th>Edith Mathis</th>
+                            <th>Mozart: Le Nozze Di Figaro - Highlights</th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                    </tbody>
+                </table><br /><br />
+                <img src="./img/매거진/매거진 내용/클래식/쇼생크 탈출.JPG" width=950 height=850><br /><br /><br /><br />
+                <p class="쇼생크탈출_containt">
+                    그럼 그 광경을 본 관객들은 이렇게 생각합니다. ‘교도소에도 이렇게 자유가 피어나는구나’ 라고요. 하지만 상당히 삐딱한 저는 주인공이 순전히 자기 자신을 다독이기 위해 음악을 틀었다고 생각합니다.<br /><br /><br />
+
+                    자신이 교도소에서 일구었던 그간의 노고를 모차르트의 음악을 통해 치하(?)하는 것이죠. 그런 주인공을 보고 교도관은 이렇게 생각했을지도 모릅니다. ‘이놈은 모차르트를 좋아하는군. 그러니 아주 성실하게 복역하겠어.’ 물론 주인공은 그럴 생각이 없습니다.<br /><br /><br />
+
+                    이것은 순전히 제 생각입니다. 하지만 누가 알겠습니까?
+                </p><br /><br /><br />
+            </div>
+            <div class="밀회">
+                <h1 class="밀회_thename">#3  <span>클래식 음악을 위한 영화도 있다 - [밀회]</span></h1><br /><br />
+                <img src="./img/매거진/매거진 내용/클래식/밀회.JPG" width=600 height=600><br /><br /><br /><br />
+                <p class="밀회_containt">
+                    이렇게 정리해보니 보니 영화 속 클래식 음악은 기만의 도구처럼 사용되는 듯 합니다. 누군가는 클래식 음악의 순수함을 빌어 원하는 바를 성취하고, 클래식 음악의 순수함을 믿은 사람들은 배신 당하게 되는 것이죠. 물론 그렇지 않은 영화도 많습니다.
+                    음악가들을 다룬 영화들, [샤인]이나 [피아니스트] , [아마데우스] 같은 작품은 클래식 음악을 정성스럽게 다루는 영화입니다.<br /><br /><br />
+
+                    이런 작품들에 깔리는 클래식 음악은 그야말로 음악 그 자체로 받아 들일 수 있습니다.<br /><br /><br />
+
+                    데이비드 린 감독의 1945년작 영화 [밀회]는 보다 다른 방식으로 클래식 음악을 사용합니다. 이 영화에는 별도의 영화음악이 없습니다. 대신 시종일관 라흐마니노프의 [피아노 협주곡 2번]이 깔립니다.
+                    그렇다고 해서 작중에 음악가들이 등장하는 것도 아닙니다. 그들은 그저 사랑으로 고민할 뿐입니다. 그런데도 라흐마니노프의 [피아노 협주곡 2번]은 그야말로 영화에 철썩 달라붙어 자연스럽게 흐릅니다.<br />
+                </p><br /><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck4" type="checkbox" onclick="checkAll4()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="checkbox2"  name="checkRow4" type="checkbox" /></th>
+                            <th>1</th>
+                            <th>Rachmaninov : Piano Concerto No. 2 In C Minor, Op. 18 - 1. Moderato</th>
+                            <th> Daniil Trifonov & The Philadelphia Orchestra & Yannick Nezet-Seguin</th>
+                            <th>Destination Rachmaninov : Departure</th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                        <tr>
+                            <th><input id="checkbox3" name="checkRow4" type="checkbox" /></th>
+                            <th>2</th>
+                            <th>Rachmaninov : Piano Concerto No. 2 In C Minor, Op. 18 - 2. Adagio Sostenuto</th>
+                            <th> Daniil Trifonov & The Philadelphia Orchestra & Yannick Nezet-Seguin</th>
+                            <th>Destination Rachmaninov : Departure</th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                        <tr>
+                            <th><input id="checkbox4" name="checkRow4" type="checkbox" /></th>
+                            <th>3</th>
+                            <th>Rachmaninov : Piano Concerto No. 2 In C Minor, Op. 18 - 3. Allegro Scherzando</th>
+                            <th> Daniil Trifonov & The Philadelphia Orchestra & Yannick Nezet-Seguin</th>
+                            <th>Destination Rachmaninov : Departure</th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                    </tbody>
+                </table><br /><br />
+                <p class="밀회_containt">
+                    P. S. 말년에 헐리우드 근처에 살았던 라흐마니노프는 생전에 영화음악을 작곡해달라는 요청을 적지 않게 받았다고 합니다. 
+                    그러나 거대한 체구만큼이나 예민했던 작곡가는 좀처럼 그럴 생각이 없었고, 결국 그의 사후에나 헐리우드는 라흐마니노프의 음악을 쓸 수 있었습니다.<br /><br /><br />
+
+                    조금은 아쉽습니다.<br /><br /><br />
+
+                    영화음악가 라흐마니노프도 꽤 잘 어울리는데 말이죠.
+                </p><br /><br /><br />
+                <p class="copy" style="font-size:12px;">출처 :  '지니:음악, 그리고 설레임'<br /><br /><br /></p>
+            </div>
+    </div>
+    </div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

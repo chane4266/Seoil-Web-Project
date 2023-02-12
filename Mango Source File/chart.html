@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>chart</title>
+	<style>
+		body{background-color:#FFF5EE;}
+		* { margin:0px; padding:0px; border:0px; }
+		a{cursor:pointer}
+		li { list-style-type:none; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#container { margin-top:170px; margin-bottom:50px; position:relative; width:100%; }
+		footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+		
+		/* 여기부터 container 스타일 */
+		a { text-decoration:none; } 
+		tr, table { border-top:1px solid black; border-collapse:collapse; }
+		th, td { border-bottom:1px solid black; padding:10px; text-align:center; }
+		#song_info { text-align:left; }   
+		#chart { width:900px; margin:30px auto; }
+		#chart_list:hover { background-color:gray; }
+		
+	</style>
+	<script>
+		var mplay;
+		var toggle=0;
+		function playing(music){
+
+			if (music==1){
+				if(toggle==0){mplay=document.getElementById("chart1");toggle=1;}
+				else{stop();}}
+			if (music==2){
+				if(toggle==0){mplay=document.getElementById("chart2");toggle=1;}
+				else{stop();}}
+			if (music==3){
+				if(toggle==0){mplay=document.getElementById("chart3");toggle=1;}
+				else{stop();}}
+			if (music==4){
+				if(toggle==0){mplay=document.getElementById("chart4");toggle=1;}
+				else{stop();}}
+			if (music==5){
+				if(toggle==0){mplay=document.getElementById("chart5");toggle=1;}
+				else{stop();}}
+			if (music==6){
+				if(toggle==0){mplay=document.getElementById("chart6");toggle=1;}
+				else{stop();}}
+			if (music==7){
+				if(toggle==0){mplay=document.getElementById("chart7");toggle=1;}
+				else{stop();}}
+			if (music==8){
+				if(toggle==0){mplay=document.getElementById("chart8");toggle=1;}
+				else{stop();}}
+			if (music==9){
+				if(toggle==0){mplay=document.getElementById("chart9");toggle=1;}
+				else{stop();}}
+			if (music==10){
+				if(toggle==0){mplay=document.getElementById("chart10");toggle=1;}
+				else{stop();}}				
+			
+			if (toggle==1)
+			mplay.play();	
+		}
+
+		
+		function stop(){
+			mplay.pause();
+			mplay.currentTime=0;
+			toggle=0;
+		}
+		
+		</script>
+</head>
+<body>
+	<audio id="chart1"><source src="./song/01.DALLADALLA.mp3" type="video/mp4"></audio>
+	<audio id="chart2"><source src="./song/02.FANCY.mp3" type="video/mp4"></audio>
+	<audio id="chart3"><source src="./song/03.SSFWL.mp3" type="video/mp4"></audio>
+	<audio id="chart4"><source src="./song/04.Boogie_Up.mp3" type="video/mp4"></audio>
+	<audio id="chart5"><source src="./song/05.Violeta.mp3" type="video/mp4"></audio>
+	<audio id="chart6"><source src="./song/06.Maybe Its Not Our Fault.mp3" type="video/mp4"></audio>
+	<audio id="chart7"><source src="./song/07.NO ONE (누구 없소).mp3" type="video/mp4"></audio>
+	<audio id="chart8"><source src="./song/08.나만 봄 (Bom).mp3" type="video/mp4"></audio>
+	<audio id="chart9"><source src="./song/09.우주선(The Voyager).mp3" type="video/mp4"></audio>
+	<audio id="chart10"><source src="./song/10.당신과는 천천히.mp3" type="video/mp4"></audio>
+	
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+
+	<div id=container>
+		<table id="chart">
+		<colgroup>
+			<col width="10%" />
+			<col width="*"/>
+			<col width="55%"/>
+			<col width="10%"/>
+			<col width="10%"/>
+		</colgroup>
+		<thead>
+			<tr>
+				<th>순위</th>
+				<th id="song_info">곡정보</th>
+				<th></th>
+				<th>듣기</th>
+				<th>뮤비</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="chart_list">
+				<td>1</td>
+				<td id="song_info" ><img src="./img/앨범/music_01.jpg" width=50 height=50></td>
+				<td id="song_info"><p>곡이름 :  DALLA DALLA <br> Artist : ITZY(있지)</p>	</td>
+				<td><a href="./song/01.DALLADALLA.mp3">▷</a></td>
+				<td><a href="https://youtu.be/pNfTK39k55U">GO</a></td>
+			</tr >
+			<tr id="chart_list">
+				<td>2</td>
+				<td id="song_info" ><img src='./img/앨범/music_02.jpg' width=50 height=50></td>
+				<td id="song_info"><p>곡이름 : FANCY <br> Artist : TWICE(트와이스)</p>	</td>
+				<td><a href="./song/02.FANCY.mp3">▷</a></td>
+				<td><a href="https://www.youtube.com/watch?v=kOHB85vDuow">GO</a></td>
+			</tr >
+			<tr id="chart_list">
+				<td>3</td>
+				<td id="song_info" ><img src='./img/앨범/music_03.jpg' width=50 height=50></td>
+				<td id="song_info"><p>곡이름 : THE FIFTH SEASON<br> Artist : 오마이걸(OH MY GIRL)</p>	</td>
+				<td><a href="./song/03.SSFWL.mp3">▷</a></td>
+				<td><a href="https://youtu.be/udGwca1HBM4">GO</a></td>
+			</tr>
+			<tr id="chart_list">
+				<td>4</td>
+				<td id="song_info" ><img src='./img/앨범/music_04.jpg' width=50 height=50></td>
+				<td id="song_info"><p>곡이름 : Boogie Up <br> Artist : 우주소녀</p>	</td>
+				<td><a href="./song/04.Boogie_Up.mp3">▷</a></td>
+				<td><a href="https://www.youtube.com/watch?v=rVeMvBTd8vQ">GO</a></td>
+			</tr>
+			<tr id="chart_list">
+				<td>5</td>
+				<td id="song_info" ><img src='./img/앨범/music_05.jpg' width=50 height=50></td>
+				<td id="song_info"><p>곡이름 : 비올레타 <br> Artist : IZ*ONE (아이즈원)</p>	</td>
+				<td><a href="./song/05.Violeta.mp3">▷</a></td>
+				<td><a href="https://youtu.be/6eEZ7DJMzuk">GO</a></td>
+			</tr>
+			<tr id="chart_list">
+				<td>6</td>
+				<td id="song_info" ><img src='./img/앨범/music_06.jpg' width=50 height=50></td>
+				<td id="song_info"><p>곡이름 : 그건 아마 우리의 잘못은 아닐 거야 <br> Artist : 백예린</p>	</td>
+				<td><a href="./song/06.Maybe Its Not Our Fault.mp3">▷</a></td>
+				<td><a href="https://youtu.be/IRNBtocmQ58">GO</a></td>
+			</tr>
+			<tr id="chart_list">
+				<td>7</td>
+				<td id="song_info" ><img src='./img/앨범/music_07.jpg' width=50 height=50></td>
+				<td id="song_info"><p>곡이름 : 누구 없소 (NO ONE) (Feat. B.I of iKON) <br> Artist : 우주소녀</p>	</td>
+				<td><a href="./song/07.NO ONE (누구 없소).mp3">▷</a></td>
+				<td><a href="https://youtu.be/GQqyCeKf8rw">GO</a></td>
+			</tr>
+			<tr id="chart_list">
+				<td>8</td>
+				<td id="song_info" ><img src='./img/앨범/music_08.jpg' width=50 height=50></td>
+				<td id="song_info"><p>곡이름 : 나만, 봄 <br> Artist : 볼빨간사춘기</p>	</td>
+				<td><a href="./song/08.나만 봄 (Bom).mp3">▷</a></td>
+				<td><a href="https://youtu.be/AsXxuIdpkWM">GO</a></td>
+			</tr>
+			<tr id="chart_list">
+				<td>9</td>
+				<td id="song_info" ><img src='./img/앨범/music_09.jpg' width=50 height=50></td>
+				<td id="song_info"><p>곡이름 : The Voyager(우주선)<br> Artist : 정승환</p>	</td>
+				<td><a href="./song/09.우주선(The Voyager).mp3">▷</a></td>
+				<td><a href="https://youtu.be/m1I7X3KoFy8">GO</a></td>
+			</tr>
+			<tr id="chart_list">
+				<td>10</td>
+				<td id="song_info" ><img src='./img/앨범/music_10.jpg' width=50 height=50></td>
+				<td id="song_info"><p>곡이름 : 당신과는 천천히 <br> Artist : 장범준</p>	</td>
+				<td><a href="./song/10.당신과는 천천히.mp3">▷</a></td>
+				<td><a href="https://youtu.be/EAVp84B888U">GO</a></td>
+			</tr>
+	
+		</tbody>
+	</table>
+	</div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

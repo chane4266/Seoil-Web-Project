@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>artist2</title>
+	<style>
+        body{background-color:#FFF5EE;}
+        .body{margin-left:200px; margin-right:200px;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		#line { border:1px solid darkgray; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header ul { padding:0; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#containt {margin-top:170px; margin-bottom:50px; position:relative; width:100%; text-align:center;}
+        footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+
+       /* 여기부터 container 스타일 */
+        #hot_img{float:left; margin: 5px 5px 10px 0px; padding:0px 5px;}
+        .artist06_main_thename {color:#FF7F50; text-align:left; font-size:28px;}
+        .ARTIST_thename, .ALBUM_thename {color:#FF00FF; text-align:left;}
+        .ALBUM_name1, .ALBUM_name2, .ALBUM_name3, .ALBUM_name4,  .ALBUM_name5 ,  .ALBUM_name6 , .ALBUM_name7 {color:#696969; font-size:22px;text-align:left;}
+        .artist06_main_thename span {color:#5F9EA0; font-size:24px;}
+
+        .ARTIST_containt, .ALBUM_subtitle1_containt, .ALBUM_subtitle2_containt, .ALBUM_subtitle3_containt, .ALBUM_subtitle4_containt
+        ,.ALBUM_subtitle5_containt, .ALBUM_subtitle6_containt, .ALBUM_subtitle7_containt {color:#5F9EA0; font-size:14px; text-align:left; line-height:195%;}
+
+        .copy {color:#191970; font-size:14px; text-align:left;}
+        table 
+        {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            border-color:#D3D3D3;
+        }
+        th, td 
+        {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            border-color:#D3D3D3;
+            font-weight:bold;
+            color:#696969;
+        }
+        button{color:#696969; background-color:#FFF5EE;}
+	</style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        function checkAll1() {
+            if ($("#wholecontrolcheck1").is(':checked')) {
+                $("input[name=checkRow1]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow1]").prop("checked", false);
+            }
+        }
+        function checkAll2() {
+            if ($("#wholecontrolcheck2").is(':checked')) {
+                $("input[name=checkRow2]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow2]").prop("checked", false);
+            }
+        }
+        function checkAll3() {
+            if ($("#wholecontrolcheck3").is(':checked')) {
+                $("input[name=checkRow3]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow3]").prop("checked", false);
+            }
+        }
+        function checkAll4() {
+            if ($("#wholecontrolcheck4").is(':checked')) {
+                $("input[name=checkRow4]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow4]").prop("checked", false);
+            }
+        }
+        function checkAll5() {
+            if ($("#wholecontrolcheck5").is(':checked')) {
+                $("input[name=checkRow5]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow5]").prop("checked", false);
+            }
+        }
+        function checkAll6() {
+            if ($("#wholecontrolcheck6").is(':checked')) {
+                $("input[name=checkRow6]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow6]").prop("checked", false);
+            }
+        }
+        function checkAll7() {
+            if ($("#wholecontrolcheck7").is(':checked')) {
+                $("input[name=checkRow7]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow7]").prop("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop  style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+    <div class="body">
+        <div id=containt>
+            <p class="artist06_main_thename">힙합 따라잡기 | <span>완전체 일리네어 & 앰비션 2019 꼬리잡기 </span> </p><br /><br />
+            <img src="./img/매거진/매거진 내용/힙알사전/1llionaire.JPG" width=850 height=550><br /><br /><br /><br />
+            <div class="ARTIST">
+                <p class="ARTIST_containt">
+                    'AOM & Illionaire' 몇 년 전만 해도 박재범(Jay Park)의 AOM과 일리네어 레코즈(Illionaire Records)를 부르는 이 말이 익숙했겠지만, 이제는 아니다. 최근에는 'Illionaire Ambition'이라고 하며, 일리네어 레코즈와 앰비션뮤직(Ambition Musik)을 묶어 부르는 것이 훨씬 자연스럽게 들린다. 
+                    실제로 도끼(Dok2)와 더콰이엇(The Quiett)이 함께 세운 앰비션뮤직은 설립 이래로 세 멤버의 꾸준한 작품 발표로 차근차근 이미지를 쌓아왔다. 입대로 인한 빈지노(Beenzino)의 이탈로 궁극의 삼각편대를 뽐낼 수 없었던 
+                    일리네어 레코즈의 상황을 고려하면, 이는 양쪽 레이블의 이미지에 크게 도움이 됐다. 그리고 올해 들어서는 빈지노의 전역, 애쉬 아일랜드(Ash Island)의 합류로 모두 완전체가 되어 돌아왔다. 
+                    6월 후순부터는 일리네어 레코즈와 앰비션뮤직의 모든 멤버가 함께하는 전국 투어가 계획되어 있다고. 
+                    그래서 아직 상반기도 지나지 않은 지금 시점으로 봐도 따로 또 같이 열심히 달려온 'Illionaire Ambition'의 2019년 발자취를 꼬리에 꼬리를 물며 따라가봤다.<br />
+                </p><br /><br />
+            </div>
+            <div class="ALBUM">
+                <div class="ALBUM_subtitle1">
+                    <p class="ALBUM_name1"> # 앰비션뮤직 - Bition Boyz</p><br /><br />
+                    <p class="ALBUM_subtitle1_containt">
+                        자식은 부모를 닮는다고, 3인 체제가 굳건할 것만 같았던 앰비션뮤직의 첫 4인 체제 단체곡이다.
+                        위풍당당하고 커버 아트워크 그대로 야망이 느껴지는 곡의 분위기는 마치 일리네어 레코즈가 ＂Illionaire Way＂를 시작으로 내놓은 수많은 레이블 앤썸을 닮은 듯하다. 송곳 같이 찔러 들어오는 해쉬스완(Hash Swan)의 첫 벌스,
+                        창모의 튠을 건 찰진 훅, 새 멤버에게 스포트라이트를 주는 구성, 흥미로운 포인트가 꽤 많다.<br />
+                    </p><br /><br />
+                    <table name="musiclist">
+                        <thead>
+                            <tr>
+                                <th><input name="wholechoeckbox" id="wholecontrolcheck1" onclick="checkAll1()" type="checkbox" /></th>
+                                <th>no</th>
+                                <th>곡명</th>
+                                <th>아티스트</th>
+                                <th>앨범</th>
+                                <th>M/V</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input id="checkbox1" name="checkRow1" type="checkbox" /></th>
+                                <th>1</th>
+                                <th>Bition Boyz</th>
+                                <th>Hash Swan, ASH ISLAND, 김효은, 창모 (CHANGMO)</th>
+                                <th>Bition Boyz</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                        </tbody>
+                    </table><br /><br /><br />
+                </div>
+                <div class="ALBUM_subtitle2">
+                    <p class="ALBUM_name2"># 김효은 & 해쉬스완 - MONEY RAIN </p><br /><br />
+                    <p class="ALBUM_subtitle2_containt">
+                        김효은과 해쉬스완은 입단 당시 평가가 조금 갈렸다. 해쉬스완은 [쇼미더머니]에서의 활약을 바탕으로 기대를 한몸에 받았다. 그에 비해 김효은은 첫 EP 
+                        [My Ambition]에서 가사, 라이밍, 플로우가 개성적이거나 변칙적이지 못했다. 올해는 기류가 조금 다르다. 스키니 브라운(Skinny Brown)과의 합작 EP, 붐뱁을 거의 완전히 놓은 [UNTITLED]까지, 장르, 
+                        스타일적으로 김효은의 긍정적인 변화가 보인다. 트랩 넘버 ＂MONEY RAIN＂에서도 저돌적인 그의 새로운 카리스마를 느낄 수 있다.<br />
+                    </p><br /><br />
+                    <table name="musiclist">
+                        <thead>
+                            <tr>
+                                <th><input name="wholechoeckbox" id="wholecontrolcheck2" type="checkbox" onclick="checkAll2()" /></th>
+                                <th>no</th>
+                                <th>곡명</th>
+                                <th>아티스트</th>
+                                <th>앨범</th>
+                                <th>M/V</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox"  name="checkRow2" /></th>
+                                <th>1</th>
+                                <th>MONEYRAIN(Feat. Hash Swan)</th>
+                                <th>김효은</th>
+                                <th>UNTITLED</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow2" /></th>
+                                <th>2</th>
+                                <th>Boss(Feat. Leellam arz)</th>
+                                <th>김효은 & SKINNY BROWN</th>
+                                <th>WE HERE</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow2" /></th>
+                                <th>3</th>
+                                <th>Playin(Feat. Leellam arz)</th>
+                                <th>김효은 & SKINNY BROWN</th>
+                                <th>WE HERE</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow2" /></th>
+                                <th>4</th>
+                                <th>TEARS</th>
+                                <th>김효은</th>
+                                <th>UNTITLED</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                        </tbody>
+                    </table><br /><br /><br />
+                </div>
+                <div class="ALBUM_subtitle3">
+                    <p class="ALBUM_name3"> # 해쉬스완 & 애쉬 아일랜드 - 발할라 (Valhalla) </p><br /><br />
+                    <p class="ALBUM_subtitle3_containt">
+                        개인 작품에서는 특별 혹은 특이한 감성을 보여준 해쉬스완은 앰비션뮤직의 막둥이 애쉬 아일랜드의 첫 EP [ASH]에서 유일하게 두 곡을 도왔다. 
+                        아무래도 누구도 복제하기 어려운 유니크한 스타일을 갖고 있어서 그런 것 아닐까. 그는 앞서 소개한 ＂Bition Boyz＂에서 날카롭게 포문을 열었다면, 
+                        ＂발할라 (Valhalla)＂에서는 세련되고 수려한 마무리를 보여준다. 여유로운 풍미마저 느껴지는 플로우 
+                        디자인이 유럽 신화의 궁전을 뜻하는 발할라의 이미지에 왠지 모르게 잘 어울린다.<br />
+                    </p><br /><br />
+                    <table name="musiclist">
+                        <thead>
+                            <tr>
+                                <th><input name="wholechoeckbox" id="wholecontrolcheck3" type="checkbox" onclick="checkAll3()" /></th>
+                                <th>no</th>
+                                <th>곡명</th>
+                                <th>아티스트</th>
+                                <th>앨범</th>
+                                <th>M/V</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow3" /></th>
+                                <th>1</th>
+                                <th>발할라 (Valhalla) (Feat. Hash Swan & Yami Tommy)</th>
+                                <th>ASH ISLAND</th>
+                                <th>ASH</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow3" /></th>
+                                <th>2</th>
+                                <th>Q Mark (Feat. EK & Hash Swan)</th>
+                                <th>ASH ISLAND</th>
+                                <th>ASH</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow3" /></th>
+                                <th>3</th>
+                                <th>스도쿠</th>
+                                <th>Hash Swan</th>
+                                <th>스도쿠</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow3" /></th>
+                                <th>4</th>
+                                <th>Arrow (Feat. Skinny Brown)</th>
+                                <th>Hash Swan</th>
+                                <th>Peridot</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow3" /></th>
+                                <th>5</th>
+                                <th>High Beam (Feat. Swervy)</th>
+                                <th>Hash Swan</th>
+                                <th>Peridot</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                        </tbody>
+                    </table><br /><br /><br />
+                </div>
+                <div class="ALBUM_subtitle4">
+                    <p class="ALBUM_name4"> # 해쉬스완 & 애쉬 아일랜드 - 발할라 (Valhalla) </p><br /><br />
+                    <p class="ALBUM_subtitle4_containt">
+                        그 누가 ＂Lose Yourself＂에 랩을 뱉는 노랑 머리 고등학생에게 이런 음악을 기대했을까? 애쉬 아일랜드는 올해 3월, 단 한 장의 작품으로 타이트한 랩을 하는 
+                        [고등래퍼2]의 윤진영에서 이모(Emo) 힙합이라는 트렌드를 가장 잘 소화하는 루키로 거듭났다. 특히, 감정을 단숨에 극적으로 끌어올리는 훅으로 
+                        화려하게 EP의 스타트를 끊는 ＂Paranoid＂는 락킹한 사운드와 함께 고독과 야성을 한꺼번에 머금는다. 듣는 순간 너무 마음에 들었다는 창모가 과연 리믹스까지 할 만하다.<br />
+                    </p><br /><br />
+                    <table name="musiclist">
+                        <thead>
+                            <tr>
+                                <th><input name="wholechoeckbox" id="wholecontrolcheck4" type="checkbox" onclick="checkAll4()" /></th>
+                                <th>no</th>
+                                <th>곡명</th>
+                                <th>아티스트</th>
+                                <th>앨범</th>
+                                <th>M/V</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow4" /></th>
+                                <th>1</th>
+                                <th>Paranoid Remix (Feat. CHANGMO & Paul Blanco)</th>
+                                <th>ASH ISLAND</th>
+                                <th>Paranoid Remix</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow4" /></th>
+                                <th>2</th>
+                                <th>Paranoid</th>
+                                <th>ASH ISLAND</th>
+                                <th>ASH</th>
+                                <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=rMQ20mMOOuM')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow4" /></th>
+                                <th>3</th>
+                                <th>DEADSTAR (Feat. CHANGMO)</th>
+                                <th>ASH ISLAND</th>
+                                <th>DEADSTAR</th>
+                                <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=tNDXskFQ6sM')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow4" /></th>
+                                <th>4</th>
+                                <th>Arrow (Feat. Skinny Brown)</th>
+                                <th>Hash Swan</th>
+                                <th>Peridot</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow4" /></th>
+                                <th>5</th>
+                                <th>High Beam (Feat. Swervy)</th>
+                                <th>Hash Swan</th>
+                                <th>Peridot</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                        </tbody>
+                    </table><br /><br /><br />
+                    <iframe width="956" height="538" src="https://www.youtube.com/embed/rMQ20mMOOuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br />
+                    <iframe width="956" height="538" src="https://www.youtube.com/embed/tNDXskFQ6sM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br />
+                </div>
+                <div class="ALBUM_subtitle5">
+                    <p class="ALBUM_name5"> # 창모 & 더콰이엇 & 빈지노 - The Fearless Ones </p><br /><br />
+                    <p class="ALBUM_subtitle5_containt">
+                        올해의 콜라보레이션 힙합 트랙을 꼽는다면 후보 한자리를 꿰찰 트랙이 벌써 나왔다. 하이어뮤직(H1GHR MUSIC)의 식케이(Sik-K)를 
+                        더해 더콰이엇, 빈지노, 창모가 뭉친 'The Fearless Ones'는 트래비스 스캇(Travis Scott)과 드레이크(Drake)가 함께한 'SICKO MODE'가 연상되는 변화무쌍한 
+                        파트 구성을 안정적인 빌드업 아래 선보인다. 본격적으로 몰아 부치는 후반부는 각각 유려함과 
+                        타이트함의 끝을 보여주는 빈지노와 창모의 완벽에 가까운 퍼포먼스로 가득하다.<br />
+                    </p><br /><br />
+                    <iframe width="956" height="538" src="https://www.youtube.com/embed/SQx90gIZK4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br /><br />
+                    <table name="musiclist">
+                        <thead>
+                            <tr>
+                                <th><input name="wholechoeckbox" id="wholecontrolcheck5" type="checkbox" onclick="checkAll5()" /></th>
+                                <th>no</th>
+                                <th>곡명</th>
+                                <th>아티스트</th>
+                                <th>앨범</th>
+                                <th>M/V</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow5" /></th>
+                                <th>1</th>
+                                <th>The Fearless Ones</th>
+                                <th>The Quiett, Sik-K, Beenzino 창모 (CHANGMO)</th>
+                                <th>The Fearless Ones</th>
+                                <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=SQx90gIZK4I')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow5" /></th>
+                                <th>2</th>
+                                <th>한강 gang megamix (Feat. 장석훈, CHANGMO, Coogie, SUPERBEE, Beenzino, ZENE THE ZILLA) </th>
+                                <th>The Quiett</th>
+                                <th>한강 gang megamix</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow5"  /></th>
+                                <th>3</th>
+                                <th>f*k all that shit remix (With Futuristic Swaver, ASH ISLAND & BRADYSTREET)</th>
+                                <th>The Quiett</th>
+                                <th>Q Day Remixes</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow5" /></th>
+                                <th>4</th>
+                                <th>Money Over Bullshit Remix (With Sik-K, SUPERBEE & CHANGMO)</th>
+                                <th>The Quiett</th>
+                                <th>Q Day Remixes</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow5" /></th>
+                                <th>5</th>
+                                <th>Prime Time Remix (With ODEE, CHANGMO, Hash Swan & Dok2)</th>
+                                <th>The Quiett</th>
+                                <th>Q Day Remixes</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                        </tbody>
+                    </table><br /><br /><br />
+                </div>
+                <div class="ALBUM_subtitle6">
+                    <p class="ALBUM_name6"> # 빈지노 - OKGO </p><br /><br />
+                    <p class="ALBUM_subtitle6_containt">
+                        힙합 팬들을 비롯한 수많은 사람이 기다렸던 빈지노가 21개월간의 현역 복무를 드디어 마쳤다. 
+                        사회로 돌아온 지 두 달 만에 내놓은 싱글 ＂OKGO＂는 미니멀한 구성과 오토튠을 건 요즘 식 트랩이다. 항상 전에 없던 무언가를 내놨던 빈지노의 창의성을 좋아하는 이들의 기대에 못 미칠 수 있다. 
+                        다만, 이센스(E SENS)와의 자연스러운 케미, 복귀 자체가 뉴스인 빈지노의 목소리를 들을 수 있다는 것만으로도 꽤 많은 반향을 일으킨 건 사실이다.<br />
+                    </p><br /><br />
+                    <table name="musiclist">
+                        <thead>
+                            <tr>
+                                <th><input name="wholechoeckbox" id="wholecontrolcheck6" type="checkbox" onclick="checkAll6()" /></th>
+                                <th>no</th>
+                                <th>곡명</th>
+                                <th>아티스트</th>
+                                <th>앨범</th>
+                                <th>M/V</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow6" /></th>
+                                <th>1</th>
+                                <th>OKGO (Feat. E SENS)</th>
+                                <th>빈지노(Beenzino))</th>
+                                <th>OKGO</th>
+                                <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=mlwqHWHo-5E&has_verified=1')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                        </tbody>
+                    </table><br /><br /><br />
+                    <iframe width="956" height="538" src="https://www.youtube.com/embed/mlwqHWHo-5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br /><br />
+                </div>
+                <div class="ALBUM_subtitle7">
+                    <p class="ALBUM_name7"> # 도끼 - So Far So Good </p><br /><br />
+                    <p class="ALBUM_subtitle7_containt">
+                        도끼는 지난해 말, 모친의 채무 문제에 관한 발언으로 홍역을 앓았다. 
+                        바닥에서 정상까지 올라오는 동안 논란이 거의 없었던 그로서는 많은 감정을 느낄 수밖에 없었을 것이다. 그래서 자신을 둘러싼 사회적 이슈에 
+                        ＂말 조 심＂이라는 싱글로 입장을 밝힌 이후 한 동안 LA로 떠나 있었던 게 아닐까 싶다. 특유의 'Good Vibes Only' 정신은 그로부터 몇 개월이 더 지나고 나서야 
+                        오랜만에 더블케이(Double K)와 뭉친 칠한 무드의 ＂So Far So Good＂을 통해 느낄 수 있었다.<br />
+                    </p><br /><br />
+                    <table name="musiclist">
+                        <thead>
+                            <tr>
+                                <th><input name="wholechoeckbox" id="wholecontrolcheck7" type="checkbox" onclick="checkAll7()" /></th>
+                                <th>no</th>
+                                <th>곡명</th>
+                                <th>아티스트</th>
+                                <th>앨범</th>
+                                <th>M/V</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox"  name="checkRow7" /></th>
+                                <th>1</th>
+                                <th>So Far So Good (Feat. Ann One & Double K)</th>
+                                <th>도끼 (Dok2)</th>
+                                <th>So Far So Good</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow7" /></th>
+                                <th>2</th>
+                                <th> Lobby</th>
+                                <th>도끼 (Dok2)</th>
+                                <th> Lobby</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow7" /></th>
+                                <th>3</th>
+                                <th>마라톤</th>
+                                <th>도끼 (Dok2)</th>
+                                <th>마라톤</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                        </tbody>
+                    </table><br /><br /><br />
+                </div>
+                <img src="./img/매거진/매거진 내용/힙알사전/힙알2.JPG" width=640 height=450><br /><br /><br /><br />
+            </div>
+            <div class="copy">
+                <p style="font-size:12px;"> 출처 :  '지니:음악, 그리고 설레임'<br /><br /><br /></p>
+            </div>
+    </div>
+    </div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

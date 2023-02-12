@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>artist2</title>
+	<style>
+        body{background-color:#FFF5EE;}
+        .body{margin-left:200px; margin-right:200px;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		#line { border:1px solid darkgray; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header ul { padding:0; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#containt {margin-top:170px; margin-bottom:50px; position:relative; width:100%; text-align:center;}
+        footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+
+       /* 여기부터 container 스타일 */
+        #hot_img{float:left; margin: 5px 5px 10px 0px; padding:0px 5px;}
+        .artist07_main_thename {color:#556B2F; text-align:left; font-size:28px;}
+        .SPECIAL_thename, .ALBUM_thename, .STORY_thename {color:#00FF00; text-align:left;}
+        .STORY_final {color:#696969; font-size:22px;}
+        .SPECIAL_thename span, .ALBUM_thename span, .STORY_thename span  {color:#5F9EA0; font-size:22px;}
+        .SPECIAL_containt, .STORY_containt, .ALBUM_containt {color:#5F9EA0; font-size:14px; line-height:195%;}
+        .SPECIAL_containt {text-align:left;}
+        .SPECIAL_containt img { margin : 0px 20px 0px 0px; float:left;}
+        .copy {color:#191970; font-size:14px; text-align:left;}
+                table 
+        {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            border-color:#D3D3D3;
+        }
+        th, td 
+        {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            border-color:#D3D3D3;
+            font-weight:bold;
+            color:#696969;
+        }
+        button{color:#696969; background-color:#FFF5EE;}
+	</style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        function checkAll1() {
+            if ($("#wholecontrolcheck1").is(':checked')) {
+                $("input[name=checkRow1]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow1]").prop("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop  style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+    <div class="body">
+        <div id=containt>
+            <p class="artist07_main_thename">생애 첫 노래 앨범, 크루셜스타 (Crucial Star) 'cigarette'</p><br /><br />
+            <div class="SPECIAL">
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190611032726282.png" width=650 height=400><br /><br /><br /><br />
+                <h1 class="SPECIAL_thename">Special | <span> 크루셜스타 (Crucial Star) 'cigarette' 뮤직비디오 촬영 현장</span></h1><br /><br />
+                <p class="SPECIAL_containt">
+                    지난 정규 [Maze Garden]에 이어 싱글 'cigarette'으로 돌아온 크루셜스타 (Crucial Star). 신곡 'cigarette' 뮤직비디오 촬영을 위해 
+                    모델 겸 배우 김진경 씨가 함께 스페인으로 떠났는데요? 뮤직비디오 촬영 현장을 지금 멜론매거진에서 공개합니다!<br />
+                </p><br /><br />
+            </div>
+            <div class="ALBUM">
+                <h1 class="ALBUM_thename">Single | <span> 크루셜스타 (Crucial Star) 'cigarette'</span></h1><br /><br />
+                <p class="SPECIAL_containt">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/102/95/310/10295310.jpg" width=120 height=120>
+                    담배는 해롭고, 아름다운 이별은 없다.<br /><br />
+
+                    생애 첫 노래 앨범을 준비 중인 크루셜스타 (Crucial Star)의 신곡 'cigarette'. 들춰내고 싶지 않았던 본심에 대하여 노래한 
+                    이 곡은 처음부터 끝까지 차가우려고 노력한다. 더 이상 온전하지 않은 마음의 결말은 뻔하기 때문에.....<br />
+                </p><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck1" type="checkbox" onclick="checkAll1()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="checkbox1" type="checkbox"  name="checkRow1" /></th>
+                            <th>1</th>
+                            <th>cigarette</th>
+                            <th> 크루셜스타 (Crucial Star)</th>
+                            <th>cigarette</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=9NxdHHjhDac')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                    </tbody>
+                </table><br /><br />
+            </div>
+            <div class="STORY">
+                <h1 class="STORY_thename">Stroy | <span>크루셜스타 (Crucial Star) 'cigarette' 뮤직비디오 촬영 현장</span></h1><br /><br />
+                <p class="STORY_containt"> 
+                    크루셜스타 (Crucial Star)의 신곡 ‘cigarette’ 뮤직비디오를 촬영하기 위해 
+                    크루셜스타와 모델 겸 배우 김진경, 감독 팔드로, 어시가 스페인으로 떠났습니다.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610013723443.jpg" width=850 height=950><br /><br />
+                <p class="STORY_containt">
+                    스페인 바르셀로나에서의 뮤직비디오 촬영 첫날입니다. 크루셜스타와 김진경의 신을 모니터 중인 팔드로 감독.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610013748916.jpg" width=850 height=950><br /><br />
+                <p class="STORY_containt">
+                    김진경의 실내 신을 찍는 중인 팔드로 감독.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610013859425.jpg" width=850 height=1050><br /><br />
+                <p class="STORY_containt">
+                    날씨가 정말 좋았던 바르셀로나의 하늘과 팔드로 감독.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610013949074.jpg" width=850 height=1100><br /><br />
+                <p class="STORY_containt">
+                    바르셀로나 고딕 지구에서 촬영 중인 크루셜스타.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610013959652.jpg" width=850 height=1050><br /><br />
+                <p class="STORY_containt">
+                    고딕 지구의 어둑한 골목길을 걸으며 촬영 중인 크루셜스타와 팔드로 감독.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610014007704.jpg" width=850 height=1050><br /><br />
+                <p class="STORY_containt">
+                    이른 아침 꽃다발을 들고 바르셀로나 길을 걸어오는 중인 김진경.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610014016064.jpg" width=850 height=950><br /><br />
+                <p class="STORY_containt">
+                    스페인의 또 다른 낙원 같은 스팟 시트헤스로 넘어왔습니다. 시트헤스의 풍경.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610014024583.jpg" width=850 height=900><br /><br />
+                <p class="STORY_containt">
+                    바람이 많이 불던 시트헤스 마을에서 촬영 중인 김진경과 팔드로 감독.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610014105111.jpg" width=850 height=1150><br /><br />
+                <p class="STORY_containt">
+                    시트헤스 남색 문의 집 앞에서의 크루셜스타.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610014117908.jpg" width=600 height=600><br /><br />
+                <p class="STORY_containt">
+                    팔드로 감독이 잠시 영상 촬영을 멈추고 필름 카메라로 담은 <br />김진경과 크루셜스타 in 고딕 지구.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610014129242.jpg" width=600 height=600><br /><br />
+                <p class="STORY_containt">
+                    시트헤스 골목길에서 프로필 촬영 중인 크루셜스타.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610014139758.jpg" width=600 height=600><br /><br />
+                <p class="STORY_containt">
+                    시트헤스 골목길에서 프로필 촬영 중인 크루셜스타 2.<br />
+                </p><br /><br /><br />
+                <p class="STORY_final"> + 뮤직비디오 & 스틸컷</p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610014158852.jpg" width=650 height=350><br /><br />
+                <p class="STORY_containt">
+                    고딕 지구를 걷는 중인 크루셜스타..<br /><br />
+                </p><br /><br />
+                <iframe width="650" height="400" src="https://www.youtube.com/embed/9NxdHHjhDac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br />
+                <p class="STORY_containt">
+                    Crucial Star (크루셜스타) - cigarette [M/V] <br /><br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190610014200643.jpg" width=650 height=350><br /><br />
+                <p class="STORY_containt">
+                    시트헤스 <br />
+                </p><br /><br />
+            </div>
+            <div class="copy">
+                <p style="font-size:12px;">출처 : 'Melon::음악이 필요한 순간 멜론' <br /><br /><br /></p>
+            </div>
+    </div>
+    </div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

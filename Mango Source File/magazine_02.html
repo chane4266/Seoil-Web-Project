@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>artist2</title>
+	<style>
+        body{background-color:#FFF5EE;}
+        .body{margin-left:200px; margin-right:200px;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		#line { border:1px solid darkgray; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header ul { padding:0; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#containt {margin-top:170px; margin-bottom:50px; position:relative; width:100%; text-align:center;}
+        footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+
+       /* 여기부터 container 스타일 */
+        #hot_img{float:left; margin: 5px 5px 10px 0px; padding:0px 5px;}
+        .top_body {text-align:center;}
+        .top_main_thename {color:#696969; text-align:center; font-size:28px;}
+        .special1 {color:#FFD700; text-align:left;}
+        .Interview_thename {color:#FF6347; text-align:center;}
+        .MV_Behind1_thename, .MV_thename, .MV_Behind2_thename {color:#FF6347; text-align:left;}
+        .special1 span, .hot span {color:black; font-size:22px;}
+        .spe1_containt, .interview p {color:#5F9EA0; font-size:16px; text-align:left; line-height:195%;}
+        .spe2_containt {color:#5F9EA0; font-size:16px; text-align:center; line-height:195%;}
+        .middle_body{color:black; font-size:16px; text-align:center;}
+        .spe1_containt img { margin : 0px 20px 0px 0px; float:left;}
+        .copy {color:#191970; font-size:14px; text-align:left;}
+        table 
+        {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            border-color:#D3D3D3;
+        }
+        th, td 
+        {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            border-color:#D3D3D3;
+            font-weight:bold;
+            color:#696969;
+        }
+        button{color:#696969; background-color:#FFF5EE;}
+	</style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        function checkAll() {
+            if ($("#wholecontrolcheck").is(':checked')) {
+                $("input[name=checkRow]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow]").prop("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop  style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+    <div class="body">
+        <div id=containt>
+            <div class="top_body">
+                <p class="top_main_thename"> 다채로운 매력을 보여줄, 로시 2번째 미니앨범 [Color Of Rothy] 발매 인터뷰!</p><br /><br /><br />
+            <img  src="https://post-phinf.pstatic.net/MjAxOTA1MjdfMjM5/MDAxNTU4OTE5Njk4NDcw.SELRohXC4K9tQdNdy7IAPOkyxjkmy17WBX7k51FOMckg.nDXr3WSDUqN7h8OBZ2oSID_DKYcVBz6hk5eohSS0u_og.JPEG/Rothy_2nd_Bee_Online.jpg.jpg?type=w1200" width=600 height=700><br /><br /><br /><br />
+            <h1 class="special1">|| <span>Rothy 2nd Mini Album [Color Of Rothy] 서면인터뷰</span></h1><br /><br /><br />
+            <p class="spe1_containt">
+                <img src="https://post-phinf.pstatic.net/MjAxOTA1MjdfMjM5/MDAxNTU4OTE5Njk4NDcw.SELRohXC4K9tQdNdy7IAPOkyxjkmy17WBX7k51FOMckg.nDXr3WSDUqN7h8OBZ2oSID_DKYcVBz6hk5eohSS0u_og.JPEG/Rothy_2nd_Bee_Online.jpg.jpg?type=w1200" width=130 height=130>
+                드라마 '뷰티인사이드' 의 첫번째 ost 앨범의 수록곡인 '구름'으로 드라마 내의 알콩달콩함을 더하여 여자 솔로가수로서 이름을 알렸던<br /> 로시의 두번째 미니앨범 [Color Of Rothy]가 발매되었다.<br /><br />
+                첫 번째 미니앨범 [Shape Of Rothy]가 로시 음악의 형태를 스케치 하듯 보여준 앨범 이였다면,<br /><br />
+                두 번째 미니앨범인  [Color Of Rothy]는 로시가 가지고 있는 다채로운 음악적 색깔을 좀 더 구체적으로 보여주는 앨범으로 돌아왔다.<br /><br />
+            </p><br /><br />
+            </div>
+            <table name="musiclist">
+                <thead>
+                    <tr>
+                        <th><input name="wholechoeckbox" id="wholecontrolcheck" type="checkbox" onclick="checkAll();"/></th>
+                        <th>no</th>
+                        <th>곡명</th>
+                        <th>아티스트</th>
+                        <th>앨범</th>
+                        <th>M/V</th>
+                        <th>Play</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><input id="checkbox1" name="checkRow" type="checkbox"/></th>
+                        <th>1</th>
+                        <th>BEE</th>
+                        <th>로시 (Rothy)</th>
+                        <th>COLOR OF ROTHY</th>
+                        <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=3PFJrUN7BXw')">▶</button></th>
+                        <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                    </tr>
+                    <tr>
+                        <th><input id="checkbox2"  name="checkRow" type="checkbox" /></th>
+                        <th>2</th>
+                        <th>어제보자 자랐어</th>
+                        <th>로시 (Rothy)</th>
+                        <th>COLOR OF ROTHY</th>
+                        <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                        <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                    </tr>
+                    <tr>
+                        <th><input id="checkbox3"  name="checkRow" type="checkbox" /></th>
+                        <th>3</th>
+                        <th>온도</th>
+                        <th>로시 (Rothy)</th>
+                        <th>COLOR OF ROTHY</th>
+                        <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                        <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                    </tr>
+                    <tr>
+                        <th><input id="checkbox4"   name="checkRow" type="checkbox" /></th>
+                        <th>4</th>
+                        <th>다핀 꽃</th>
+                        <th>로시 (Rothy)</th>
+                        <th>COLOR OF ROTHY</th>
+                        <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                        <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                    </tr>
+                </tbody>
+            </table><br /><br />
+            <div class="middle_body">
+                <p class="spe2_containt">
+                    지난 ‘다 핀 꽃’으로 음원차트 상위권에 오르며,<br />
+                    여자 솔로가수로서 자리매김 한 로시가 또 한번 색다른 변신을 해 돌아왔다고 합니다!<br /><br />
+
+                    색 달라진 로시를 네이버 MOIM 단독 인터뷰를 통해 자세히 알아보도록 하겠습니다!<br /><br /><br />
+                </p>
+                <img id="albumpicture" src="https://post-phinf.pstatic.net/MjAxOTA1MjdfMzkg/MDAxNTU4OTE5NzMxOTA0.HzFT3zNyu06lwhNYdvpDYcXYFeubLF6mInm72CW2XUsg.B0GaQwRzkqC8-8H4NKBknbkyqAJBwdRz-B7wFamM1uMg.JPEG/Rothy_MOB_1.jpg.jpg?type=w1200" width=800 height=1200><br />
+                <img id="albumpicture" src="https://post-phinf.pstatic.net/MjAxOTA1MjdfMiAg/MDAxNTU4OTE5NzkxMDAx.77VaHemUSn0Wa2aqte5tPksJt22f6UgLAXfKLvhxgv4g.ytuwlytH8LwSUiqeyvbwB-T5-4wyMhsoHL6MIxzdEaAg.JPEG/Rothy_MOB_2.jpg.jpg?type=w1200" width=800 height=1200><br />
+                <img id="albumpicture" src="https://post-phinf.pstatic.net/MjAxOTA1MjdfMjMg/MDAxNTU4OTE5ODE3MDU2.uQICRc_hN3zvoW5ytVjj-udkNJ9RStJiiLucVySBKI8g.IPFsIGpihclHG3dYYAsWyn9WpF9TT1Jj3vqM8EtXQkQg.JPEG/Rothy_MOB_3.jpg.jpg?type=w1200" width=800 height=1200><br />
+                <img id="albumpicture" src="https://post-phinf.pstatic.net/MjAxOTA1MjdfMjI2/MDAxNTU4OTE5ODE3MDk2.ijIem3Xds3XznXqDx3dowPso3PHQMZytyM5L3Dyzv8kg.9QL6hpXhitoboNID7e1nFCav4-UYMSJmh1Up4-eP-w0g.JPEG/Rothy_MOB_4.jpg.jpg?type=w1200" width=800 height=1200><br />
+            </div>
+            <div class="interview">
+                <h1 class="Interview_thename">★  Interview  ★</h1><br /><br />
+                <p>
+                    Q. 인터뷰 시작 전 MOIM 독자 분들께 간단한 인사와 소개 부탁 드립니다.<br /><br />
+
+                    네이버 MOIM 독자분들 안녕하세요 ~<br />
+                    이번에 두번째 미니앨범 [Color Of Rothy] 로 돌아온 로시입니다^^<br /><br /><br /><br />
+
+                    Q. 지난 8월 ‘버닝’ 이후 두번째 댄스곡 인데 어떤 기분인지?<br /><br />
+
+                    어떻게 말하면 같은 댄스 곡 이라고 할 수 있지만 전혀 다른 장르의 곡을 만나게 되어서<br />
+                    버닝때 처럼 새로운 도전과 걱정과 설렘이 공존합니닷,,,^^<br /><br /><br /><br />
+
+                    Q. “BEE’는 어떤 곡인지 소개해주세요.<br /><br />
+
+                    저의 타이틀곡 “BEE”는 꽃에 꿀벌들이 모여드는 모습에 비유를 한 가사로 아주 귀엽고 시크하고 당돌한 모습을 보여줄 수 있는 힙합 알앤비 곡입니다!<br />
+                    기존 곡들과 또 다른 느낌의 곡이어서 유니크함과 재미를 느끼실 수 있을 것 같아요!!<br /><br /><br /><br />
+
+                    Q. 수록 곡 ‘어제보다 자랐어’ 는 어떤 노래인지, 그리고 어떻게 느끼는지?<br /><br />
+
+                    “어제보다 자랐어” 라는 곡은 정말 감사하게도 신승훈대표님께서 작곡해주시고 김이나 작사가님께서 작사를 함께 해주셨는데 이번에도 두분이 저의 이미지를 생각해주시면서 예쁜 가사를 써주셨습니다.<br />
+                    저의 성장스토리를 담은 내용의 곡이기에 더욱 애정이 많이 가는 곡입니다<br />
+                    “Stars”에 이어서 또 다른 위로의 힐링송이 나오지 않았을까 싶습니다.<br /><br /><br /><br />
+
+                    Q. 신승훈의 노래 ‘온도’ 를 리메이크 했다. 원곡과 가장 다른 로시만의 특징이 있다면?<br /><br />
+
+                    대표님도 대표님만의 감성과 음색으로 그 노래를 표현해 주셨다면<br />
+                    저도 저만의 나이대의 감성과 음색으로 또 다르게 표현할 수 있었던 곡이었던 것 같아요<br />
+                    구체적으로 말하자면,, 첫사랑을 하는듯한 저만의 풋풋한 감정을 담을 수 있지 않았나 싶습니다!<br /><br /><br /><br />
+
+                    Q. 뮤직비디오 촬영은 어땠는지?<br /><br />
+
+                    저의 첫번째 미니앨범 수록곡인 “잃어버린 시간을 찾아서”의 뮤직비디오를 찍어주신<br />
+                    디지페디 감독님들과 함께 두번째 촬영을 하게 되었는데요 저를 너무 잘 파악해주시고 콘티를 짜주셔서<br />
+                    즐겁게 놀듯이 촬영을 했어요!<br />
+                    정말 로시다운 모습을 많이 보여줄 수 있는 것 같아서 시간 가는 줄 모르고 촬영했어요!!<br />
+                    정말 예쁘고 가사처럼 다양한 색의 로시를 담아주셔서 정말 감사드립니다 ^^<br /><br /><br /><br />
+
+                    Q. 기다려준 팬분들께 한마디 해주세요<br /><br />
+
+                    싱글 앨범을 내고 4개월만에 컴백을 해 인사를 드리게 되었는데 그 시간 동안 응원해주시고 기다려주시고 많은 격려와 사랑을 주신 여러분들께 감사드려요!<br />
+                    그래서 이번 앨범을 더욱 더 여러분들께 그리고 팬분들께 소중한 선물이 될 수 있도록 열심히 준비했으니까 지금처럼 저와 함께 블루밍 길 만 걸어요 ~~ 사랑합니다 ♡<br /><br /><br /><br />
+
+                    Q. 앞으로의 활동 계획<br /><br />
+
+                    방송활동은 버닝 이후로 처음이기 때문에 이번 활동때는 더욱 저의 얼굴을 많이 보여드릴 수 있도록 최대한 많고, 다양한 활동을 하면서 팬분들과 만나며 소통하는 그런 활동이 될 것 같습니다 !! 지켜봐주세요 ㅎㅎ 감사합니다 ~~ !<br /><br /><br />
+
+                </p>
+            </div>
+            <h2 class="MV_thename">로시 [BEE] | 뮤직비디오</h2><br /><br />
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/3PFJrUN7BXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br /><br />
+            <h2 class="MV_Behind1_thename">로시 [BEE] | 뮤직비디오 촬영비하인드 #1</h2><br /><br />
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/Nm6yjO_3eo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br /><br />
+            <h2 class="MV_Behind2_thename">로시 [BEE] | 뮤직비디오 촬영비하인드 #2</h2><br /><br />
+            <iframe width="956" height="538" src="https://www.youtube.com/embed/5MFOHtAWO90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br /><br /><br />
+        </div>
+        <p class="copy" style="font-size:12px;">출처 : '네이버 포스트:다채로운 매력을 보여줄, 로시 2번째 미니앨범 [Color Of Rothy] 발매 인터뷰!' <br /><br /><br /></p>
+    </div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

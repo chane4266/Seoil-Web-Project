@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>artist2</title>
+	<style>
+        body{background-color:#FFF5EE;}
+        .body{margin-left:200px; margin-right:200px;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		#line { border:1px solid darkgray; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header ul { padding:0; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#containt {margin-top:170px; margin-bottom:50px; position:relative; width:100%; text-align:center;}
+        footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+
+       /* 여기부터 container 스타일 */
+        #hot_img{float:left; margin: 5px 5px 10px 0px; padding:0px 5px;}
+        .artist08_main_thename {color:black; text-align:center; font-size:28px;}
+        .SPECIAL_containt{color:#5F9EA0; font-size:14px; line-height:195%;}
+        .SPECIAL_containt span{color:#8B0000; font-size:14px; font-weight: bold; line-height:195%;}
+        .SPECIAL_containt #MV {font-size:18px;}
+        .copy {color:#191970; font-size:14px; text-align:left;}
+                table 
+        {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            border-color:#D3D3D3;
+        }
+        th, td 
+        {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            border-color:#D3D3D3;
+            font-weight:bold;
+            color:#696969;
+        }
+        button{color:#696969; background-color:#FFF5EE;}
+	</style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        function checkAll1() {
+            if ($("#wholecontrolcheck1").is(':checked')) {
+                $("input[name=checkRow1]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow1]").prop("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop  style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+    <div class="body">
+        <div id=containt>
+            <p class="artist08_main_thename">방탄소년단 이어 또 빌보드 점령해버린 K팝 아이돌 </p><br /><br />
+            <div class="SPECIAL">
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190605061635762.jpg" width=850 height=400><br /><br /><br /><br />
+                <p class="SPECIAL_containt">
+                    미국 빌보드 메인차트에 7주 연속 이름을 올리고 있는<br />
+                    방탄소년단을 뒤이어<br />
+                    빌보드 차트에서 선전 중인<br />
+                    또 다른 K팝 아이돌 그룹이 있다.<br /><br />
+
+                    그들의 정체는<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190605031523622.jpg" width=850 height=600><br /><br /><br /><br />
+                <p class="SPECIAL_containt">
+                    최근 컴백을 알린 SM 대표 아이돌 그룹<br />
+                    <span>'NCT 127'</span><br /><br />
+
+                    NCT 127은 지난 5월 24일 발표한<br />
+                    <span>EP [NCT #127 WE ARE SUPERHUMAN]으로</span> <br />
+                    빌보드 메인 차트인 <span>'빌보드200' 11위</span>를 기록했다.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190605031807194.png" width=850 height=600><br /><br /><br /><br />
+                <p class="SPECIAL_containt">
+                    NCT 127에 영광을 안겨준 이 앨범에 대해<br />
+                    잠시 살펴보자면,<br /><br />
+
+                    <span>국내외 히트메이커들</span>이 참여해 완성도를 높이고,<br />
+                    총 6곡의 수록곡이 각자 <span>다채로운 장르</span>를 품고 있어<br />
+                    발매 전부터 상당한 관심을 끌어 모았던 앨범으로,<br /><br />
+
+                    <span>타이틀곡</span>에 해당하는 <span>'Superhuman'</span>은<br />
+                    개인의 잠재력을 깨닫고 긍정의 힘으로<br />
+                    꿈을 이루고자 한다면 누구든 슈퍼휴먼이 될 수 있다는<br />
+                    긍정적인 메시지를 담고 있는<br />
+                    컴플렉스트로 댄스 장르의 화려한 곡이다<br /><br />
+                    <span id="MV">| NCT 127 - Superhuman </span><br /><br />
+                    <iframe width="956" height="538" src="https://www.youtube.com/embed/x95oZNxW5Rc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
+                </p><br /><br />
+                
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck1" type="checkbox" onclick="checkAll1()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="checkbox1" type="checkbox" name="checkRow1" /></th>
+                            <th>1</th>
+                            <th>Superhuman</th>
+                            <th>NCT 127</th>
+                            <th>NCT #127 WE ARE SUPERHUMAN - The 4th Mini Album</th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                    </tbody>
+                </table><br /><br />
+                <p class="SPECIAL_containt">
+                    동시에, 이들은 <span>'아티스트 100' 차트 6위</span>에<br />
+                    이름을 올렸는데 이는 <span>자체 최고 기록</span>이자<br />
+                    <span>한국 가수 사상 두 번째 높은 기록을 달성</span>한 것이다.<br />
+                    (첫째는 '1위를 기록'했던 방탄소년단)<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190605045213250.png" width=850 height=600><br /><br /><br /><br />
+                <p class="SPECIAL_containt">
+                    에드 시런과 아리아나 그란데를 제치고<br />
+                    칼리드와 포스트 말론의 뒤를 잇는 순위라니<br />
+                    정말 놀랍기 그지없는데.<br /><br />
+
+                    더불어,<br />
+                    소셜 네트워크 서비스에서 가장 활동적인 음악 아티스트를<br />
+                    선정하는 <span>인기 차트 '소셜 50'에선 2위에 랭크</span>되며<br />
+                    대대적으로 인기를 입증해버린 NCT 127이다.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190605045855464.jpg" width=850 height=1050><br />
+                <p class="SPECIAL_containt">
+                    방탄소년단의 세계적 대행진에<br />
+                    이제 조금은 무덤덤해질 만도 한데<br />
+                    무서운 상승세를 보이며 놀라운 기록들을 세워가는<br />
+                    NCT 127에 대중들은 또 한 번 크게 놀랐다.<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190605050349085.jpg" width=600 height=400>
+                <p class="SPECIAL_containt">
+                    <span>좋은 퀄리티의 앨범, 독보적인 퍼포먼스</span>를 선사하며<br />
+                    <span>한국 대중음악의 위상</span>을 높여가고 있는<br />
+                    자랑스러운 이들에게 <span>무한 감사와 존경의 박수</span>를 보내며<br /><br />
+
+                    해외 음악 시장을 뒤흔들 <span>후발 폭격기</span>로서<br />
+                    앞으로 들려줄 더욱 놀라운 이야기들을 기대해본다.<br />
+                </p><br /><br /><br />
+            </div> 
+            <p class="copy" style="font-size:12px;">출처 : 'Melon::음악이 필요한 순간 멜론' <br /><br /><br /></p>         
+         </div>
+    </div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

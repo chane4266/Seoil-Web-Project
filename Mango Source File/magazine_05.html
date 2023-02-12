@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>artist2</title>
+	<style>
+        body{background-color:#FFF5EE;}
+        .body{margin-left:200px; margin-right:200px;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		#line { border:1px solid darkgray; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header ul { padding:0; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#containt {margin-top:170px; margin-bottom:50px; position:relative; width:100%; text-align:center;}
+        footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+
+       /* 여기부터 container 스타일 */
+        #hot_img{float:left; margin: 5px 5px 10px 0px; padding:0px 5px;}
+        .artist05_main_thename {color:#2F4F4F; text-align:left; font-size:24px;}
+        .ARTIST_thename, .ALBUM_thename, .CONCERT_thename {color:#FF00FF; text-align:left;}
+        .ALBUM_name1, .ALBUM_name2, .ALBUM_name3 {color:#5F9EA0; font-size:22px;text-align:left;}
+        .ARTIST_thename span, .ALBUM_thename span, .CONCERT_thename span {color:#5F9EA0; font-size:22px;}
+        .ARTIST_containt, .ALBUM_containt, .CONCERT_containt {color:#5F9EA0; font-size:14px; text-align:left; line-height:195%;}
+        .ALBUM_explanation {color:#5F9EA0; font-size:12px; text-align:left; line-height:195%;}
+        .ALBUM_explanation img {margin : 0px 20px 30px 0px; float:left;}
+        .ALBUM_explanation span {font-weight:bold;}
+        .copy {color:#191970; font-size:14px; text-align:left;}
+         table 
+        {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            border-color:#D3D3D3;
+        }
+        th, td 
+        {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            border-color:#D3D3D3;
+            font-weight:bold;
+            color:#696969;
+        }
+        button{color:#696969; background-color:#FFF5EE;}
+	</style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        function checkAll1() {
+            if ($("#wholecontrolcheck1").is(':checked')) {
+                $("input[name=checkRow1]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow1]").prop("checked", false);
+            }
+        }
+        function checkAll2() {
+            if ($("#wholecontrolcheck2").is(':checked')) {
+                $("input[name=checkRow2]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow2]").prop("checked", false);
+            }
+        }
+        function checkAll3() {
+            if ($("#wholecontrolcheck3").is(':checked')) {
+                $("input[name=checkRow3]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow3]").prop("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop  style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+    <div class="body">
+        <div id=containt>
+            <p class="artist05_main_thename">마치 기분 좋은 드라이브처럼, 〈ADOY(아도이) Drive Vol.1〉</p><br /><br />
+            <img src="./img/매거진/매거진 내용/아도이/ADOY.JPG" width=850 height=550><br /><br /><br /><br />
+            <div class="ARTIST">
+                <h1 class="ARTIST_thename">ARTIST | <span> 청춘의 정서를 안고 달리는 밴드, ADOY(아도이)</span></h1><br /><br />
+                <p class="ARTIST_containt">
+                    아도이(ADOY)는 신스팝을 기반으로 음악성과 대중성을 동시에 갖춘 보기 드문 밴드이다.<br />
+                    아도이의 음악이 연상시키는 건 무척 단순하고 직관적인 것들이다. 여름, 바다, 파도, 드라이브, 공원, 달리기, 밤공기, 맥주처럼 잠시 떠올리는것만으로 기분 좋아지는 것들. . . . . . .<br />
+                    거기에 여행, 꿈, 미래, 실수, 외로움 같은 조금 복잡한 뒷이야기를 가진 이미지들이 더해진다.<br />
+                </p><br /><br />
+                <img src="./img/매거진/매거진 내용/아도이/아도이2.JPG" width=850 height=550><br /><br /><br /><br />
+                <p class="ARTIST_containt">
+                    2017년의 발표한 그들의 첫 EP [CATNIP]은 잘 다듬어진 사운드와 멜로디로 국내외 음악 관계자들과 팬들에게 큰 호응을 얻었으며,<br />
+
+                    데뷔하자마자 인천 펜타포트 록 페스티벌, 스페이스 공감, 네이버 온스테이지, 사운드시티, DMZ 페스티벌, 그린플러그드, 렛츠락 페스티벌, 유희열의 스케치북, 영국 TGE 페스티벌 등 크고 작은 다양한 무대에서 그들만의 색깔이 확실한 라이브를 선보이고 있다.<br /><br />
+
+
+                    2018년 6월 그들의 두번째 EP 앨범 [LOVE] 를 발표한 그들은K 인디차트 1위와 애플뮤직 일렉트로닉 앨범과 노래 부분에서 모두 1위를 차지하며 공연 섭외 1순위 밴드가 되었다.<br />
+
+                    한국은 물론 싱가폴, 대만, 일본, 태국 등에서의 단독 공연을 매진 시키는 등 활동 범위를 점차 넓혀 나가고 있는 그들을 만나보자<br />
+                </p><br /><br />
+            </div>
+            <div class="ALBUM">
+                <h1 class="ALBUM_thename">ALBUM | <span> 아도이, [CATNIP] [Young], [LOVE]를 말하다!</span></h1><br /><br />
+                <div class="ALBUM_subtitle1">
+                    <p class="ALBUM_name1"> 1. CATNIP </p><br />
+                    <p class="ALBUM_explanation">
+                        <img src="./img/매거진/매거진 내용/아도이/아도이_앨범.JPG" width=130 height=130>
+                        <span>CATNIP</span><br />
+                        ADOY<br />
+                        6곡
+                    </p>
+                    <table name="musiclist">
+                        <thead>
+                            <tr>
+                                <th><input name="wholechoeckbox" id="wholecontrolcheck1" onclick="checkAll1()" type="checkbox" /></th>
+                                <th>no</th>
+                                <th>곡명</th>
+                                <th>아티스트</th>
+                                <th>앨범</th>
+                                <th>M/V</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input id="checkbox1" name="checkRow1" type="checkbox" /></th>
+                                <th>1</th>
+                                <th>Grace</th>
+                                <th>ADOY</th>
+                                <th>CATNIP</th>
+                                <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=BOo1QuRvfxQ')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" name="checkRow1" type="checkbox" /></th>
+                                <th>2</th>
+                                <th>Don't Stop</th>
+                                <th>ADOY</th>
+                                <th>CATNIP</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" name="checkRow1" type="checkbox" /></th>
+                                <th>3</th>
+                                <th>Runner's High</th>
+                                <th>ADOY</th>
+                                <th>CATNIP</th>
+                                <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=7LOwioRW52w')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" name="checkRow1" type="checkbox" /></th>
+                                <th>4</th>
+                                <th>I Just Can't Forget Her</th>
+                                <th>ADOY</th>
+                                <th>CATNIP</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" name="checkRow1" type="checkbox" /></th>
+                                <th>5</th>
+                                <th>Laika</th>
+                                <th>ADOY</th>
+                                <th>CATNIP</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" name="checkRow1" type="checkbox" /></th>
+                                <th>6</th>
+                                <th>San Francisco</th>
+                                <th>ADOY</th>
+                                <th>CATNIP</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                        </tbody>
+                    </table><br /><br /><br />
+                    <img src="./img/매거진/매거진 내용/아도이/아도이3.JPG" width=850 height=550><br /><br /><br />
+                    <p class="ALBUM_containt">
+                        정다영 : 젊음과 청춘의 잔상을 담은 앨범이에요.<br />
+                        우리들은 이미 청춘을 지나온 사람이라 생각하는데(웃음) 그 당시엔 겁이 없었고 어리숙했어요.<br />
+                        하지만 감정적으로는 지금보다 풍부했던 것 같아요. 슬프거나 기쁜 걸 훨씬 잘 느꼈었는데 지금은 모든 감정이 잔잔한 편이에요.<br />
+                        당시의 감정과 이런 지금의 생각을 풀어낸 앨범이다 보니 지금 청춘이신 분들도, 이제 청춘을 지나왔다고 생각하는 분들도 모두 공감해주실 수 있는 앨범 인 것 같습니다.<br />
+                    </p><br /><br />
+                    <img src="./img/매거진/매거진 내용/아도이/아도이4.JPG" width=850 height=550><br /><br /><br />
+                    <p class="ALBUM_containt">
+                        ZEE : 첫 앨범이라 물론 아쉬운 부분도 있지만 아직도 마음에 드는 결과물이에요.<br />
+                        가사도 사운드도 우리의 색을 잡기 위해 최대한 다양한 것을 시도해 본 앨범이었다고 생각해요.<br />
+                    </p><br /><br />
+                </div>
+                <div class="ALBUM_subtitle2">
+                    <p class="ALBUM_name2"> 2. Young </p><br /><br />
+                    <p class="ALBUM_explanation">
+                        <img src="./img/매거진/매거진 내용/아도이/아도이_앨범2.JPG" width=130 height=130>
+                        <span>Young</span><br />
+                        ADOY<br />
+                        1곡
+                    </p>
+                    <table name="musiclist">
+                        <thead>
+                            <tr>
+                                <th><input name="wholechoeckbox" id="wholecontrolcheck2" type="checkbox" onclick="checkAll2()" /></th>
+                                <th>no</th>
+                                <th>곡명</th>
+                                <th>아티스트</th>
+                                <th>앨범</th>
+                                <th>M/V</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox"  name="checkRow2" /></th>
+                                <th>1</th>
+                                <th>Young</th>
+                                <th>ADOY</th>
+                                <th>Young</th>
+                                <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=zUgpD0tW1rI')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th> 
+                            </tr>
+                        </tbody>
+                    </table><br /><br /><br />
+                    <img src="./img/매거진/매거진 내용/아도이/아도이5.JPG" width=850 height=550><br /><br /><br />
+                    <p class="ALBUM_containt">
+                        오주환 : 우리가 좋아하는 건 복잡하고 어려운 것이 아닌 '여행', '바다', '꿈', '밤공기', '사랑' 같은, 생각하는 것만으로도 기분 좋아지는 무척 단순하고 직관적인 거에요.<br />
+                        그런 단순하고 기분 좋은 생각에 이 노래를 듣고 나서, 여러분이 바라보는 풍경들에 더욱 색깔을 입히고, 자신의 삶을 좀 더 활력 있고 생생하게 만들어줬으면 하는 바람으로 쓴 사랑 노래입니다.<br />
+                    </p><br /><br />
+                    <img src="./img/매거진/매거진 내용/아도이/아도이6.JPG" width=850 height=550><br /><br /><br />
+                    <p class="ALBUM_containt">
+                        정다영 : 'Young'을 정말 좋아해요. 맨 처음 곡을 들었을 때부터 그랬고, 잘 될 것 같은 느낌이 들었어요.<br />
+
+                        항상 사랑이 최고라고 생각하는데, 이 곡은 로맨틱하기도 하고 가사가 없어도 사랑스러운 거예요. 동네방네 자랑하고 싶은 곡이에요!<br />
+                    </p><br /><br />
+                </div>
+                <div class="ALBUM_subtitle3">
+                    <p class="ALBUM_name3"> 3. LOVE </p><br /><br />
+                    <p class="ALBUM_explanation">
+                        <img src="./img/매거진/매거진 내용/아도이/아도이_앨범3.JPG" width=130 height=130>
+                        <span>LOVE</span><br />
+                        ADOY<br />
+                        6곡
+                    </p>
+                    <table name="musiclist">
+                        <thead>
+                            <tr>
+                                <th><input name="wholechoeckbox" id="wholecontrolcheck3" type="checkbox" onclick="checkAll3()" /></th>
+                                <th>no</th>
+                                <th>곡명</th>
+                                <th>아티스트</th>
+                                <th>앨범</th>
+                                <th>M/V</th>
+                                <th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox" name="checkRow3" /></th>
+                                <th>1</th>
+                                <th>Wonder</th>
+                                <th>ADOY</th>
+                                <th>LOVE</th>
+                                <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=DohcBXkt0HM')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox"  name="checkRow3" /></th>
+                                <th>2</th>
+                                <th>Young</th>
+                                <th>ADOY</th>
+                                <th>LOVE</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox"  name="checkRow3" /></th>
+                                <th>3</th>
+                                <th>Bike</th>
+                                <th>ADOY</th>
+                                <th>LOVE</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox"  name="checkRow3" /></th>
+                                <th>4</th>
+                                <th>Blanc (Feat. George)</th>
+                                <th>ADOY</th>
+                                <th>LOVE</th>
+                                <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=iXfUkdoyL4E')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox"  name="checkRow3" /></th>
+                                <th>5</th>
+                                <th>Balloon</th>
+                                <th>ADOY</th>
+                                <th>LOVE</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                            <tr>
+                                <th><input id="checkbox1" type="checkbox"  name="checkRow3" /></th>
+                                <th>6</th>
+                                <th>It Doesn't Even Matter</th>
+                                <th>ADOY</th>
+                                <th>LOVE</th>
+                                <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                                <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                            </tr>
+                        </tbody>
+                    </table><br /><br /><br />
+                    <img src="./img/매거진/매거진 내용/아도이/아도이7.JPG" width=850 height=550><br /><br /><br />
+                    <p class="ALBUM_containt">
+                        오주환 : 앨범 제목이 '러브'여서 그런지 몰라도 '사랑'이라는 단어가 많이 보이더라고요.<br />
+                        많은 아티스트들이 쓰고, 단어를 강조한 프로젝트들이 많았어요. 그걸 보며 '사랑'이 어떤 의미들을 지니고 있는지 생각해봤어요.<br />
+
+                        흔한 단어이지만, 지금 이렇게 다시 대두된다는 건 우리가 미처 보지 못했던 부분을 짚어내는 거잖아요. 사랑에는 형태가 없다고 생각해요.<br /><br />
+                        영화 '셰이프 오브 워터(The Shape of water)'처럼 어느 그릇에 담아도 모양이 맞춰지는 거죠.<br />
+                        '이것이 사랑이고 저것은 사랑이 아니다'라고 말할 수 없잖아요.<br />
+                        (정)다영이가 사랑이 최고라고 했는데, 나에게도 최고인 것 같아요.<br />
+                        사랑은 우리에게 필요한 해답이 아닐까 싶어요.<br />
+                    </p><br /><br />
+                    <img src="./img/매거진/매거진 내용/아도이/아도이8.JPG" width=850 height=550><br /><br /><br />
+                    <p class="ALBUM_containt">
+                        ZEE(지) : 저희는사랑이 제일 중요하다고 생각해요. 이번 앨범은 다 사랑에 관한 곡인데, 각기 다른 시기의 사랑을 노래하고 있어요.<br />
+                        선공개되었던 'Young'은 사랑하는 순간을 담은 예쁜 곡이고, 타이틀곡인 'Wonder'는 사랑하지만 이별을 향해 가는 감정에 관한 노래죠<br />
+                    </p><br /><br />
+                    <img src="./img/매거진/매거진 내용/아도이/아도이9.JPG" width=550 height=900><br /><br /><br />
+                    <p class="ALBUM_containt">
+                        박근창 : 타이틀곡 'Wonder'는 아도이만의 색이 살아 있는 곡이에요.<br />
+                        아도이 하면 떠오르는 것들이 있잖아요. 원더는 거기에 가장 충족되는 곡이 아닐까 싶네요. 저희 멤버들이 다 제일 좋은 곡으로 뽑은 곡이기도 하고요.<br />
+                    </p><br /><br />
+                </div></div>
+            <div class="CONCERT">
+                <h1 class="CONCERT_thename">CONCERT | <span>ADOY(아도이) Drive Vol.1</span></h1><br /><br />
+                <p class="CONCERT_containt"> 차승주의 뮤직비디오 촬영 현장을 지니뮤직 여러분들께 공개합니다!</p><br /><br /><br />
+                <img src="./img/매거진/매거진 내용/아도이/아도이_콘서트.JPG" width=850 height=1200><br /><br />
+                <p class="CONCERT_containt">
+                    일시 : 2019.07.06(토) 7PM<br />
+                    장소 : YES24 라이브홀<br />
+                    주최 : 엔젤하우스, 블루엔터테인먼트<br />
+                    주관 : 블루엔터테인먼트<br />
+                    후원 : CJ문화재단<br />
+                    예매링크 : <a href="https://bit.ly/2VtJ9dR">https://bit.ly/2VtJ9dR</a><br />
+                </p><br /><br />
+                <iframe width="960" height="500" src="https://www.youtube.com/embed/zUgpD0tW1rI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br /><br />
+                <p class="CONCERT_containt">
+                    ＂도시 불빛의 라디오를 켜고 어디로 향할지 알려줘.<br /> 
+                    우리가 아는 그곳들로 밤새 달려서 데려다줘＂<br /> 
+                    눈을 감고 상상해본다. 도로를 미끄러지듯 달리며 바라보는 풍경들.<br /> 
+                    네온사인 반짝이는 도시의 야경, 석양이 드리워진 바닷가.<br /> 
+                    부드러운 배기음과 함께 흐르는 노래들...<br /> <br /> 
+
+                    음악은 소리없는 배경에 모든 색깔을 입혀 준다.<br /> 
+                    우리의 지금을 좀 더 활력 있고, 생생하게 만들어 준다.<br /> 
+                    그렇게 음악은 즐거운 배경이 되기도, 나만 아는 비밀이 되기도 한다.<br /> 
+                    마치 기분 좋은 드라이브처럼...<br /> 
+                </p><br /><br />         
+            </div><br /> 
+            <div class="copy">
+                <p style="font-size:12px;"> 출처 :  '지니:음악, 그리고 설레임'<br /><br /><br /></p>
+            </div>
+    </div>
+    </div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

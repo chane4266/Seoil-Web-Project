@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>artist2</title>
+	<style>
+        body{background-color:#FFF5EE;}
+        .body{margin-left:200px; margin-right:200px;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		#line { border:1px solid darkgray; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header ul { padding:0; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#containt {margin-top:170px; margin-bottom:50px; position:relative; width:100%; text-align:center;}
+        footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+
+       /* 여기부터 container 스타일 */
+        #hot_img{float:left; margin: 5px 5px 10px 0px; padding:0px 5px;}
+        .artist04_main_thename {color:#2F4F4F; text-align:left; font-size:24px;}
+        .SPECIAL_thename, .ALBUM_thename, .STORY_thename, .PHOTO_thename, .ViDEO_thename {color:#FF00FF; text-align:left;}
+        .SPECIAL_thename span, .ALBUM_thename span, .STORY_thename span, .PHOTO_thename span, .ViDEO_thename span {color:#5F9EA0; font-size:22px;}
+        .SPECIAL_containt, .STORY_containt, .PHOTO_containt {color:#5F9EA0; font-size:14px; line-height:195%;}
+        .SPECIAL_containt {text-align:left;}
+        .copy {color:#191970; font-size:14px; text-align:left;}
+       table 
+        {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            border-color:#D3D3D3;
+        }
+        th, td 
+        {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            border-color:#D3D3D3;
+            font-weight:bold;
+            color:#696969;
+        }
+        button{color:#696969; background-color:#FFF5EE;}
+	</style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        function checkAll()
+        {
+            if ($("#wholecontrolcheck").is(':checked')) {
+                $("input[name=checkRow]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow]").prop("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop  style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+    <div class="body">
+        <div id=containt>
+            <p class="artist04_main_thename">차승주, 싱글 [어쩌면 우리] MV 촬영 현장 & 프로필 사진 공개</p><br /><br />
+            <div class="SPECIAL">
+                <img src="./img/매거진/매거진 내용/차승주/차승주1.JPG" width=850 height=550><br /><br /><br /><br />
+                <h1 class="SPECIAL_thename">SPECIAL | <span> 차승주 [어쩌면 우리] 발매</span></h1><br /><br />
+                <p class="SPECIAL_containt">
+                    청순한 외모와 그에 걸맞은 음색으로 주목받고 있는 실력파 신인 가수 차승주가 신곡 ‘어쩌면 우리’를 발매한다.<br /><br /><br />
+
+                    차승주는 남다른 표현력과 곡 소화 능력으로 주목받고 있는 신예다. 차승주는 이번 신곡에서 작사에 참여하며 아티스트의 면모를 보여주고 있다.<br /><br /><br />
+
+                    가요계 유망주로 손꼽히고 있는 차승주는 잔잔하지만 울림이 있고 감동이 있는 음악과 음악에 감동을 더하는 라이브로 리스너들에게 감동을 전달할 예정이다.<br /><br /><br />
+
+                    신곡 ‘어쩌면 우리’는 헤어진 후 각자의 생활속에 서로를 문득 떠올린 순간을 이야기 한 곡으로 차승주의 목소리로 곡의 분위기를 잘 표현해 완성도를 높였다<br /><br /><br />
+                </p><br /><br />
+            </div>
+            <div class="ALBUM">
+                <h1 class="ALBUM_thename">ALBUM | <span> 어쩌면 우리</span></h1><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck" onclick="checkAll()" type="checkbox" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="checkbox1" name="checkRow" type="checkbox" /></th>
+                            <th>1</th>
+                            <th>어쩌면 우리</th>
+                            <th>차승주</th>
+                            <th>어쩌면 우리</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=5_iOVb1pYkw')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                        <tr>
+                            <th><input id="checkbox1"name="checkRow"  type="checkbox" /></th>
+                            <th>2</th>
+                            <th>어쩌면 우리(Inst.)</th>
+                            <th>차승주</th>
+                            <th>어쩌면 우리</th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                    </tbody>
+                </table><br /><br />
+            </div>
+            <div class="STORY">
+                <h1 class="STORY_thename">STORY | <span>뮤직비디오 촬영 현장 비하인드</span></h1><br /><br />
+                <p class="STORY_containt"> 차승주의 뮤직비디오 촬영 현장을 지니뮤직 여러분들께 공개합니다!</p><br /><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주2.JPG" width=850 height=550><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주3.JPG" width=850 height=550><br /><br /><br />
+                <p class="STORY_containt">
+                    저~기 멀리서 걸어오는 승주양과 왠지 모를 쓸쓸한 뒷모습이 담긴 이곳은 어디일까요?<br /><br /><br />
+
+                    바로바로 승주양의 신곡 ‘어쩌면 우리’의 뮤직비디오 촬영 현장입니다!!<br />
+                </p><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주5.JPG" width=750 height=1050><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주6.JPG" width=750 height=1050><br /><br /><br />
+                <p class="STORY_containt">
+                    크으 우리 승주양 모델핏 좀 보세요<br /><br /><br />
+                    예쁘고 노래도 잘하고 !<br /><br /><br />
+                    뮤직비디오가 점점 기대되는데요!<br /><br /><br />
+                </p>
+                <img src="./img/매거진/매거진 내용/차승주/차승주7.JPG" width=850 height=550><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주8.JPG" width=850 height=550><br /><br /><br />
+                <p class="STORY_containt">
+                    바람개비 사이에서 머리카락이 바람에 흩날려도 예쁨이 뿜뿜!<br /><br /><br />
+
+                    역시가 역시! 이번 컷 또한 너무 기대가 되는데요!
+                </p><br /><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주9.JPG" width=850 height=550><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주10.JPG" width=850 height=550><br /><br /><br />
+                <p class="STORY_containt">
+                    두번째 장소로 이동 했는데요!<br /><br />
+                    아련한 표정과 함께 쓸쓸하게 걸어가는 승주양 보는 이의 마음 또한 슬퍼지는데요,<br /><br />
+                    신곡과 뮤직비디오가 너무 궁금해집니다!
+                </p><br /><br /><br />
+            </div>
+            <div class="PHOTO">
+                <h1 class="PHOTO_thename">PHOTO | <span>차승주 프로필 사진</span></h1><br /><br /> 
+                <p class="PHOTO_containt"> 뮤직비디오 공개에 앞서 ! 지니 가족 여러분들께만 승주양의 프로필 사진 공개합니다!</p><br /><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주11.JPG" width=850 height=1200><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주12.JPG" width=850 height=1200><br /><br /><br />
+                <p class="PHOTO_containt"> 긴생머리에 흰색 니트로 청순미 뿜뿜!<br /><br />
+
+                밝게 웃고 있는 모습은 물론, 무표정한 모습까지 너무 예쁘지 않나요!?
+                </p><br /><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주13.JPG" width=850 height=1200><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주14.JPG" width=850 height=1200><br /><br /><br />
+                <p class="PHOTO_containt"> 
+                    앗 ! 그렇게 쳐다보면...!<br /><br />
+                    심장이 바운스 바운스 두근대!! 읍읍!!
+                </p><br /><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주15.JPG" width=850 height=1200><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주16.JPG" width=850 height=1200><br /><br /><br />
+                <p class="PHOTO_containt">
+                    하늘하늘한 원피스마저 너무 잘 어울리는 승주양<br /><br />
+                    청순함과 단아함까지 ㅇ3ㅇ<br /><br />
+                    이렇게 다 어울리기 있나요? >ㅠ<
+                </p><br /><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주17.JPG" width=850 height=1200><br /><br />
+                <img src="./img/매거진/매거진 내용/차승주/차승주18.JPG" width=850 height=1200><br /><br /><br />
+                <p class="PHOTO_containt">
+                    마지막 컷!<br /><br />
+
+                    장난기 넘치는 표정 상반되는 몽환적인 표정까지도 잘 어울리는 우리 승주양!<br />
+                    공개된 프로필 사진만큼이나 취향을 저격할 승주양의 신곡!<br /><br />
+
+                    함께 들으러 가보실까요?!
+                </p><br /><br /><br />               
+            </div>
+            <div class="ViDEO">
+                <h1 class="ViDEO_thename">ViDEO | <span>타이틀곡 [어쩌면 우리] 뮤직비디오</span></h1><br /><br />
+                <iframe width="850" height="500" src="https://www.youtube.com/embed/5_iOVb1pYkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen margin></iframe>
+            </div><br /><br /><br />
+            <div class="copy">
+                <p style="font-size:12px;">출처 :  '지니:음악, 그리고 설레임'<br /><br /><br /></p>
+            </div>
+    </div>
+    </div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>

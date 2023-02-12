@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>artist2</title>
+	<style>
+        body{background-color:#FFF5EE;}
+        .body{margin-left:200px; margin-right:200px;}
+		* { margin:0px; padding:0px; border:0px; }
+		li { list-style-type:none; }
+		#line { border:1px solid darkgray; }
+		.wrap { width:100%; margin:0px auto; padding:0px; }
+		header { border-bottom:1px solid black; background-color:#FFFFE0; z-index:1; position:fixed; top:0; left:0; width:100%; } 
+		header a { color:black; text-decoration:none; }
+		header ul { padding:0; }
+		header li { text-align:center; display:inline-block; }
+		header ul li a:hover { background-color:gray;}
+		header ul li a { margin:0px auto; padding:8px 20px; color:black; display:block; text-decoration:none; }
+		#login { float:right; }
+		#containt {margin-top:170px; margin-bottom:50px; position:relative; width:100%; text-align:center;}
+        footer { background-color:black; color:white; border-top:1px solid black; margin-top:10px; padding:10px; text-align:center; }
+
+       /* 여기부터 container 스타일 */
+        #hot_img{float:left; margin: 5px 5px 10px 0px; padding:0px 5px;}
+        .artist09_main_thename {color:#2F4F4F; text-align:left; font-size:24px;}
+        .SPECIAL_thename, .ALBUM_thename, .STORY_thename, .PHOTO_thename, .MV_thename {color:#FF00FF; text-align:left;}
+        .SPECIAL_thename span, .ALBUM_thename span, .STORY_thename span, .PHOTO_thename span, .MV_thename span {color:#5F9EA0; font-size:22px;}
+        .SPECIAL_containt,.ALBUM_containt ,.STORY_containt, .PHOTO_containt {color:#5F9EA0; font-size:14px; line-height:195%;}
+        .ALBUM_containt {text-align:left;}
+        .ALBUM_containt img { margin : 0px 20px 0px 0px; float:left;}
+        .copy {color:#191970; font-size:14px; text-align:left;}
+                table 
+        {
+            width: 100%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            border-color:#D3D3D3;
+        }
+        th, td 
+        {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            border-color:#D3D3D3;
+            font-weight:bold;
+            color:#696969;
+        }
+        button{color:#696969; background-color:#FFF5EE;}
+	</style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        function checkAll1() {
+            if ($("#wholecontrolcheck1").is(':checked')) {
+                $("input[name=checkRow1]").prop("checked", true);
+            }
+            else {
+                $("input[name=checkRow1]").prop("checked", false);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class=wrap>
+	<header>
+		<h1 style="text-align:center; margin:30px 0px;"><a href="main.html" style="color:#FFD700;">MANGO</a></h1>
+		<ul class=topmenu>
+			<li class=litop  style="padding-left:30px;"><a href="chart.html">망고차트</a></li>
+			<li class=litop><a href="magazine.html">매거진</a></li>
+			<li class=litop><a href="album.html">앨범</a></li>
+			<li class=litop><a href="ticket.html">이용권 구매</a></li>
+			<li class=litop id="login"><a href="mypage.html">마이페이지</a></li>
+		</ul>
+	</header>
+    <div class="body">
+        <div id=containt>
+            <p class="artist09_main_thename">눈부신 우주소녀의 Summer! 스페셜 앨범 [For the Summer]</p><br /><br />
+            <div class="SPECIAL">
+                <img src="./img/매거진/매거진 내용/우주소녀/우주소녀.JPG" width=800 height=450><br /><br /><br /><br />
+                <h1 class="SPECIAL_thename">SPECIAL | <span> 우주소녀 [For the Summer] BLUE ver. 자켓 촬영 현장</span></h1><br /><br />
+                <p class="SPECIAL_containt">
+                    푸른 하늘과 투명한 구름, 해변을 뛰노는 멤버들과 함께 여름이 흐릅니다. 순수하고 신비해서 더 매력적인 우주소녀가 이번엔 반전의 계절을 선사합니다! 
+                    올해 여름의 BGM이 되어줄, 우주소녀만의 특별한 새 음악, 우주소녀의 스페셜 앨범 [For the Summer] BLUE ver. 
+                    자켓 촬영 현장을 멜론매거진에서 단독 공개합니다!<br />
+                </p><br /><br />
+            </div>
+            <div class="ALBUM">
+                <h1 class="ALBUM_thename">ALBUM | <span> 어쩌면 우리</span></h1><br /><br />
+                <p class="ALBUM_containt">
+                <img src="https://cdnimg.melon.co.kr/cm/album/images/102/93/846/10293846.jpg" width=120 height=120>
+                    우주소녀의 썸머 스페셜 앨범 [For the Summer]는 철저히 여름을 겨냥한다. 일렉트로 펑크, 레트로 디스코, 댄스, EDM 등 여러 장르가 섞여 컬러풀한 사운드로 구현됐고, 
+                    기분 좋게 여름의 풍경을 고스란히 옮겨놓았다. 아련한 사랑의 판타지를 대표하는 우주소녀가 기존 이미지를 뒤엎고 세련된 웰메이드 팝을 압축해 들려준다.<br /><br />
+
+                    타이틀곡 'Boogie Up'은 룸메이트와 여름 나기에 나선 우주소녀의 청량함이 돋보이는 곡이다. 속도감 있는 전개와 화려한 편곡이 인상적으로, 파격과 변신 대신에 상쾌하고 편안한 휴식을 제공한다. 
+                    시청각을 압도하는 강렬함 대신 특유의 경쾌한 에너지와 부드러운 흐름을 동시에 자극하는 이들만의 매력적인 파티 음악이다.<br /><br />
+
+                    이번 음반은 우주소녀 다음 스텝에 대한 기대감을 높이기에 충분하다. 2016년 'MoMoMo (모모모)'로 데뷔한 이후 '비밀이야 (Secret)',
+                     '너에게 닿기를 (I Wish)', '꿈꾸는 마음으로', '부탁해', 'La La Love'까지, 우주소녀의 판타지는 흥미로운 스토리와 콘셉트로 정체성을 지켜나갔다. 
+                    영리하게 전환점에 도달한 우주소녀가 생기 넘치는 새 여름을 선사할 전망이다.<br />
+                </p><br /><br />
+                <table name="musiclist">
+                    <thead>
+                        <tr>
+                            <th><input name="wholechoeckbox" id="wholecontrolcheck1" type="checkbox" onclick="checkAll1()" /></th>
+                            <th>no</th>
+                            <th>곡명</th>
+                            <th>아티스트</th>
+                            <th>앨범</th>
+                            <th>M/V</th>
+                            <th>Play</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><input id="checkbox1" type="checkbox" name="checkRow1" /></th>
+                            <th>1</th>
+                            <th>boogie up</th>
+                            <th>우주소녀</th>
+                            <th>SPECIAL ALBUM [For the Summer]</th>
+                            <th><button type="button" onclick="window.open('https://www.youtube.com/watch?v=rVeMvBTd8vQ')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                        <tr>
+                            <th><input id="checkbox1" type="checkbox" name="checkRow1" /></th>
+                            <th>2</th>
+                            <th>눈부셔</th>
+                            <th>우주소녀</th>
+                            <th>SPECIAL ALBUM <For the Summer></th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                        <tr>
+                            <th><input id="checkbox1" type="checkbox" name="checkRow1" /></th>
+                            <th>3</th>
+                            <th>My Type</th>
+                            <th>우주소녀</th>
+                            <th>SPECIAL ALBUM <For the Summer></th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                        <tr>
+                            <th><input id="checkbox1" type="checkbox" name="checkRow1" /></th>
+                            <th>4</th>
+                            <th>우리끼리</th>
+                            <th>우주소녀</th>
+                            <th>SPECIAL ALBUM <For the Summer></th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                        <tr>
+                            <th><input id="checkbox1" type="checkbox" name="checkRow1" /></th>
+                            <th>5</th>
+                            <th>Sugar Pop</th>
+                            <th>우주소녀</th>
+                            <th>SPECIAL ALBUM <For the Summer></th>
+                            <th><button type="button" onclick="alert('본 노래는 뮤직비디오가 없습니다.')">▶</button></th>
+                            <th><button type="button" onclick="alert('아직 음원파일이 준비되지 않았습니다 ㅠㅠ')">♪</button></th>
+                        </tr>
+                    </tbody>
+                </table><br /><br />
+            </div>
+            <div class="STORY">
+                <h1 class="STORY_thename">STORY | <span>우주소녀 [For the Summer] BLUE ver. 자켓 촬영 현장</span></h1><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530043703412.jpg" width=800 height=430><br /><br />
+                <p class="STORY_containt">
+                    시원한 바람이 불던 어느 날, 자켓 촬영이 한창이던 우주소녀 멤버들을 만났습니다. 
+                    푸른 바다와 너무도 잘 어울리는 파란색 계열 옷을 입고 촬영에 임하는 우주소녀 멤버들! 
+                    보고만 있어도 시원해지는 자켓 촬영 속으로 함께하시죠!<br />
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530043841618.jpg" width=800 height=550><br /><br /><br />
+                <p class="STORY_containt">
+                    가장 먼저 촬영장에 나타난 멤버는 수빈! 시원한 바람을 맞으며 열심히 촬영에 임하고 있네요.
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530043858064.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    이어서 촬영에 임하는 연정! 뒷 배경인 바다와 너무도 잘 어울리는 미소가 아름답습니다.
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530043911527.jpg" width=800 height=550><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530043954237.jpg" width=800 height=1200><br /><br />
+                <p class="STORY_containt">
+                    카메라를 향해 웃어주는 연정 & 수빈 유닛! 가장 미소가 아름다운 둘의 조화가 아닐까요?
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044017896.jpg" width=800 height=1100><br /><br />
+                <p class="STORY_containt">
+                    이어서 유닛 촬영 중에도! 카메라를 보며 웃어주는 센스까지 발휘해줍니다.
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044026035.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    새하얀 옷을 입고 나타난 여름! 이번 앨범 콘셉트와 너무도 잘 어울리는 여름이죠!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044035276.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    여름 앨범 콘셉트에 맞춰! 푸른색으로 염색한 다영! 보는 사람까지 시원해지는 다영입니다. : )
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044100754.jpg" width=800 height=550><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044103232.jpg" width=800 height=1100><br /><br />
+                <p class="STORY_containt">
+                    카메라를 향해 귀엽게 웃어주는 여름 & 다영 유닛!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044237105.jpg" width=800 height=550><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044358299.jpg" width=800 height=1100><br /><br />
+                <p class="STORY_containt">
+                    막내들의 조합답게 촬영장에서도 귀여움이 가득! 묻어 나오고 있습니다!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044453279.jpg" width=800 height=550><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044455876.jpg" width=800 height=1100><br /><br />
+                <p class="STORY_containt">
+                    푸른 원피스를 입고 나타난 루다! 시원한 바람과 함께 흩날리는 머리카락마저 아름답네요!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044554313.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    길쭉 길쭉! 시원한 포즈로 촬영에 임하고 있는 다원!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044608078.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    여러분들을 향한 루다의 사랑스러운 미소와 다원의 사랑스러운 하트!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044617727.jpg" width=800 height=550><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044621034.jpg" width=800 height=1100><br /><br />
+                <p class="STORY_containt">
+                    너무나 귀여운 이 루다 & 다원 유닛은! 사랑둥이 유닛이 아닐까 싶습니다!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044630186.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    선베드로 이어진 다음 촬영의 주인공은!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044644108.jpg" width=800 height=1250><br /><br />
+                <p class="STORY_containt">
+                    바람이 불어도 아름다운 보나입니다!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044716933.jpg" width=800 height=1100><br /><br />
+                <p class="STORY_containt">
+                    푸른 바다를 배경으로 다양한 포즈를 취하고 있는 엑시까지!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044734121.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    우주소녀의 언니 라인을 맡고 있는 멤버 두 명이네요! 그래서 그런지 한 층 더 성숙한 시원함을 보여주고 있습니다!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044748075.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    장난기가 많으면서도 촬영에 임하는 순간! 눈빛부터가 달라지는 엑시 & 보나 유닛!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044759151.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    이번 앨범에서 단발머리로 변신한 설아!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044820706.jpg" width=800 height=1250><br /><br />
+                <p class="STORY_containt">
+                    푸른 헤어밴드가 너무나도 잘 어울립니다!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044844166.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    모래사장의 한 가운데에 앉아 촬영에 임하는 마지막 멤버는 은서!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044847452.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    누가 유닛 아니랄까 봐 카메라를 향한 포즈까지도 똑같은 설아 & 은서 유닛!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044901563.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    시원시원한 미소가 너무도 잘 어울리는 둘의 조합입니다!
+                </p><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530044910879.jpg" width=800 height=550><br /><br />
+                <p class="STORY_containt">
+                    시원한 단체 사진으로 마무리합니다!<br /><br />
+
+                    지금까지 우주소녀의 스페셜 앨범! [For the Summer] BLUE ver. 자켓 촬영 비하인드 포토를 만나보셨는데요! 
+                    보는 사람마저 시원해지는 이번 앨범! 우주소녀 [For the Summer]의 타이틀곡 'Boogie Up' 많이 사랑해주세요!
+                </p><br /><br /><br />
+                <div class="MV">
+                    <h1 class="MV_thename">Official MV | <span> 우주소녀 'Boogie Up'</span></h1><br /><br />
+                    <iframe width="960" height="500" src="https://www.youtube.com/embed/rVeMvBTd8vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br /><br />
+                </div><br /><br />
+            </div>
+            <div class="PHOTO">
+                <h1 class="PHOTO_thename">Official Photo| <span> 우주소녀 [For the Summer]</span></h1><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045109481.jpg" width=700 height=550><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045112049.jpg" width=700 height=550><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045115330.jpg" width=700 height=550><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045124292.jpg" width=700 height=1200><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045129793.jpg" width=700 height=1200><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045134437.jpg" width=700 height=1200><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045137758.jpg" width=700 height=1200><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045141992.jpg" width=700 height=1200><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045147684.jpg" width=700 height=1200><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045152290.jpg" width=700 height=1200><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045155900.jpg" width=700 height=400><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045157828.jpg" width=700 height=1200><br /><br />
+                <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20190530045200794.jpg" width=700 height=1200><br /><br />       
+            </div>
+            <div class="copy">
+                <p style="font-size:12px;">출처 : 'Melon::음악이 필요한 순간 멜론'<br /><br /><br /></p>
+            </div>
+    </div>
+    </div>
+	<footer>
+		<p><strong> &lt;&lt; MANGO PROJECT &gt;&gt; </strong></p>
+		<p>2조</p>
+		<p>배세진(조장): 앨범 페이지, 메인페이지(서브), 프로젝트 총괄</p>
+		<p>이종찬: 매거진 페이지, 메인페이지(서브)</p>
+		<p>김성빈: 차트, 회원가입, 마이페이지, 메인페이지(메인)</p>
+		<p>강성구: 이용권 구매 페이지</p><br>
+	</footer>
+</div>
+</body>
+</html>
